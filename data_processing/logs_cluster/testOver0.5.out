@@ -1,0 +1,837 @@
+2022-07-31 10:37:45,994 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = node04.datos.cluster.uy/10.0.187.104
+STARTUP_MSG:   args = [-format]
+STARTUP_MSG:   version = 3.3.3
+STARTUP_MSG:   classpath = /clusteruy/home/andres.collares/hadoop-3.3.3/etc/hadoop:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jetty-util-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/accessors-smart-2.4.7.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jaxb-api-2.2.11.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/animal-sniffer-annotations-1.17.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerby-xdr-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/asm-5.0.4.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/javax.servlet-api-3.1.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/audience-annotations-0.5.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/metrics-core-3.2.4.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/avro-1.7.7.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jetty-util-ajax-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/checker-qual-2.5.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jetty-webapp-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-beanutils-1.9.4.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/netty-3.10.6.Final.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-cli-1.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jetty-xml-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-codec-1.15.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-collections-3.2.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jsch-0.1.55.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-compress-1.21.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jcip-annotations-1.0-1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-configuration2-2.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/json-smart-2.4.7.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-daemon-1.0.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/nimbus-jose-jwt-9.8.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-io-2.8.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jsp-api-2.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-lang3-3.12.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jsr305-3.0.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-logging-1.1.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jsr311-api-1.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-math3-3.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/paranamer-2.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-net-3.6.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-text-1.4.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jul-to-slf4j-1.7.36.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/curator-client-4.2.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerb-admin-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/curator-framework-4.2.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerb-client-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/curator-recipes-4.2.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/re2j-1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/dnsjava-2.1.7.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerb-common-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/failureaccess-1.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/reload4j-1.2.18.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/gson-2.8.9.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/slf4j-api-1.7.36.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/guava-27.0-jre.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerb-core-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/hadoop-annotations-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerb-crypto-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/hadoop-auth-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jetty-io-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/hadoop-shaded-guava-1.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jetty-http-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/hadoop-shaded-protobuf_3_7-1.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerb-identity-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/httpclient-4.5.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/httpcore-4.4.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerb-server-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/j2objc-annotations-1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jetty-security-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jackson-annotations-2.13.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerb-simplekdc-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jackson-core-2.13.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerb-util-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jetty-server-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jackson-databind-2.13.2.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerby-asn1-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jetty-servlet-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerby-config-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jakarta.activation-api-1.2.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jersey-core-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/snappy-java-1.1.8.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jersey-json-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerby-pkix-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jersey-server-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerby-util-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jersey-servlet-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/stax2-api-4.2.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jettison-1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/token-provider-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/woodstox-core-5.3.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/zookeeper-3.5.6.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/zookeeper-jute-3.5.6.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/hadoop-common-3.3.3-tests.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/hadoop-common-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/hadoop-kms-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/hadoop-nfs-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/hadoop-registry-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jetty-util-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/accessors-smart-2.4.7.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jaxb-api-2.2.11.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/animal-sniffer-annotations-1.17.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/asm-5.0.4.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/javax.servlet-api-3.1.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/audience-annotations-0.5.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/netty-3.10.6.Final.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/avro-1.7.7.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jetty-util-ajax-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/checker-qual-2.5.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jetty-webapp-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-beanutils-1.9.4.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/netty-all-4.1.68.Final.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jetty-xml-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-codec-1.15.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jaxb-impl-2.2.3-1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-collections-3.2.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jsch-0.1.55.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-compress-1.21.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jcip-annotations-1.0-1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-configuration2-2.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/json-simple-1.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/nimbus-jose-jwt-9.8.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-io-2.8.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/json-smart-2.4.7.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-lang3-3.12.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jsr305-3.0.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jsr311-api-1.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-math3-3.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/okhttp-2.7.5.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-net-3.6.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/okio-1.6.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-text-1.4.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerb-admin-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/curator-client-4.2.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerb-client-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/curator-framework-4.2.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerb-common-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/curator-recipes-4.2.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/paranamer-2.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/dnsjava-2.1.7.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerb-core-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/failureaccess-1.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/gson-2.8.9.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/re2j-1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/guava-27.0-jre.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerb-crypto-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/hadoop-annotations-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerb-identity-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/hadoop-auth-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jetty-io-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/hadoop-shaded-guava-1.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jetty-http-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/hadoop-shaded-protobuf_3_7-1.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerb-server-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/httpclient-4.5.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/reload4j-1.2.18.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/httpcore-4.4.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerb-simplekdc-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/j2objc-annotations-1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jetty-security-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jackson-annotations-2.13.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerb-util-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jackson-core-2.13.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerby-asn1-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jetty-server-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jackson-databind-2.13.2.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerby-config-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jackson-jaxrs-1.9.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jetty-servlet-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerby-pkix-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jackson-xc-1.9.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jakarta.activation-api-1.2.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jersey-core-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/snappy-java-1.1.8.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jersey-json-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerby-util-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jersey-server-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerby-xdr-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jersey-servlet-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/stax2-api-4.2.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jettison-1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/token-provider-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/woodstox-core-5.3.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/zookeeper-3.5.6.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/zookeeper-jute-3.5.6.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-3.3.3-tests.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-client-3.3.3-tests.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-client-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-httpfs-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-native-client-3.3.3-tests.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-native-client-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-nfs-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-rbf-3.3.3-tests.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-rbf-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-app-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-common-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.3.3-tests.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-nativetask-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-uploader-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/HikariCP-java7-2.4.12.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/aopalliance-1.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/asm-analysis-9.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/asm-commons-9.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/asm-tree-9.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/bcpkix-jdk15on-1.60.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/bcprov-jdk15on-1.60.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/ehcache-3.3.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/fst-2.50.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/websocket-server-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/geronimo-jcache_1.0_spec-1.0-alpha-1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/guice-4.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/guice-servlet-4.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jackson-jaxrs-base-2.13.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/websocket-servlet-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jackson-jaxrs-json-provider-2.13.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jackson-module-jaxb-annotations-2.13.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jakarta.xml.bind-api-2.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/java-util-1.9.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/websocket-client-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/javax-websocket-client-impl-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/websocket-common-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/javax-websocket-server-impl-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/javax.inject-1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/javax.websocket-api-1.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/javax.websocket-client-api-1.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/javax.ws.rs-api-2.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jersey-client-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jersey-guice-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jetty-annotations-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jetty-client-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jetty-jndi-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jetty-plus-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jline-3.9.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jna-5.2.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/json-io-2.5.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/metrics-core-3.2.4.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/mssql-jdbc-6.2.1.jre7.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/objenesis-2.6.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/scala-library-2.13.8.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/snakeyaml-1.26.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/swagger-annotations-1.5.4.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/websocket-api-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-api-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-applications-mawo-core-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-client-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-common-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-registry-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-server-common-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-server-nodemanager-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-server-router-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-server-tests-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-server-timeline-pluginstorage-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-server-web-proxy-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-services-api-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-services-core-3.3.3.jar
+STARTUP_MSG:   build = https://github.com/apache/hadoop.git -r d37586cbda38c338d9fe481addda5a05fb516f71; compiled by 'stevel' on 2022-05-09T16:36Z
+STARTUP_MSG:   java = 1.8.0_191
+************************************************************/
+2022-07-31 10:37:46,010 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2022-07-31 10:37:46,087 INFO namenode.NameNode: createNameNode [-format]
+2022-07-31 10:37:46,238 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 10:37:46,604 INFO common.Util: Assuming 'file' scheme for path /scratch/andres.collares/nameNode in configuration.
+2022-07-31 10:37:46,605 INFO common.Util: Assuming 'file' scheme for path /scratch/andres.collares/nameNode in configuration.
+2022-07-31 10:37:46,611 INFO namenode.NameNode: Formatting using clusterid: CID-6b124b2e-e3bd-40bf-9d25-f6fbd82b4268
+2022-07-31 10:37:46,639 INFO namenode.FSEditLog: Edit logging is async:true
+2022-07-31 10:37:46,686 INFO namenode.FSNamesystem: KeyProvider: null
+2022-07-31 10:37:46,688 INFO namenode.FSNamesystem: fsLock is fair: true
+2022-07-31 10:37:46,690 INFO namenode.FSNamesystem: Detailed lock hold time metrics enabled: false
+2022-07-31 10:37:46,701 INFO namenode.FSNamesystem: fsOwner                = andres.collares (auth:SIMPLE)
+2022-07-31 10:37:46,701 INFO namenode.FSNamesystem: supergroup             = supergroup
+2022-07-31 10:37:46,701 INFO namenode.FSNamesystem: isPermissionEnabled    = true
+2022-07-31 10:37:46,701 INFO namenode.FSNamesystem: isStoragePolicyEnabled = true
+2022-07-31 10:37:46,701 INFO namenode.FSNamesystem: HA Enabled: false
+2022-07-31 10:37:46,743 INFO common.Util: dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2022-07-31 10:37:46,752 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2022-07-31 10:37:46,752 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2022-07-31 10:37:46,755 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2022-07-31 10:37:46,756 INFO blockmanagement.BlockManager: The block deletion will start around 2022 Jul 31 10:37:46
+2022-07-31 10:37:46,757 INFO util.GSet: Computing capacity for map BlocksMap
+2022-07-31 10:37:46,757 INFO util.GSet: VM type       = 64-bit
+2022-07-31 10:37:46,759 INFO util.GSet: 2.0% max memory 26.7 GB = 546.1 MB
+2022-07-31 10:37:46,759 INFO util.GSet: capacity      = 2^26 = 67108864 entries
+2022-07-31 10:37:46,836 INFO blockmanagement.BlockManager: Storage policy satisfier is disabled
+2022-07-31 10:37:46,836 INFO blockmanagement.BlockManager: dfs.block.access.token.enable = false
+2022-07-31 10:37:46,842 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.threshold-pct = 0.999
+2022-07-31 10:37:46,842 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.min.datanodes = 0
+2022-07-31 10:37:46,842 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.extension = 30000
+2022-07-31 10:37:46,843 INFO blockmanagement.BlockManager: defaultReplication         = 1
+2022-07-31 10:37:46,843 INFO blockmanagement.BlockManager: maxReplication             = 512
+2022-07-31 10:37:46,843 INFO blockmanagement.BlockManager: minReplication             = 1
+2022-07-31 10:37:46,843 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+2022-07-31 10:37:46,843 INFO blockmanagement.BlockManager: redundancyRecheckInterval  = 3000ms
+2022-07-31 10:37:46,843 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+2022-07-31 10:37:46,843 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2022-07-31 10:37:46,866 INFO namenode.FSDirectory: GLOBAL serial map: bits=29 maxEntries=536870911
+2022-07-31 10:37:46,866 INFO namenode.FSDirectory: USER serial map: bits=24 maxEntries=16777215
+2022-07-31 10:37:46,866 INFO namenode.FSDirectory: GROUP serial map: bits=24 maxEntries=16777215
+2022-07-31 10:37:46,866 INFO namenode.FSDirectory: XATTR serial map: bits=24 maxEntries=16777215
+2022-07-31 10:37:46,877 INFO util.GSet: Computing capacity for map INodeMap
+2022-07-31 10:37:46,877 INFO util.GSet: VM type       = 64-bit
+2022-07-31 10:37:46,877 INFO util.GSet: 1.0% max memory 26.7 GB = 273.0 MB
+2022-07-31 10:37:46,877 INFO util.GSet: capacity      = 2^25 = 33554432 entries
+2022-07-31 10:37:47,410 INFO namenode.FSDirectory: ACLs enabled? true
+2022-07-31 10:37:47,410 INFO namenode.FSDirectory: POSIX ACL inheritance enabled? true
+2022-07-31 10:37:47,410 INFO namenode.FSDirectory: XAttrs enabled? true
+2022-07-31 10:37:47,410 INFO namenode.NameNode: Caching file names occurring more than 10 times
+2022-07-31 10:37:47,415 INFO snapshot.SnapshotManager: Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2022-07-31 10:37:47,417 INFO snapshot.SnapshotManager: SkipList is disabled
+2022-07-31 10:37:47,421 INFO util.GSet: Computing capacity for map cachedBlocks
+2022-07-31 10:37:47,421 INFO util.GSet: VM type       = 64-bit
+2022-07-31 10:37:47,421 INFO util.GSet: 0.25% max memory 26.7 GB = 68.3 MB
+2022-07-31 10:37:47,422 INFO util.GSet: capacity      = 2^23 = 8388608 entries
+2022-07-31 10:37:47,431 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2022-07-31 10:37:47,431 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2022-07-31 10:37:47,431 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2022-07-31 10:37:47,434 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+2022-07-31 10:37:47,434 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2022-07-31 10:37:47,436 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+2022-07-31 10:37:47,436 INFO util.GSet: VM type       = 64-bit
+2022-07-31 10:37:47,436 INFO util.GSet: 0.029999999329447746% max memory 26.7 GB = 8.2 MB
+2022-07-31 10:37:47,436 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+2022-07-31 10:37:47,462 INFO namenode.FSImage: Allocated new BlockPoolId: BP-257244174-10.0.187.104-1659274667453
+2022-07-31 10:37:47,482 INFO common.Storage: Storage directory /scratch/andres.collares/nameNode has been successfully formatted.
+2022-07-31 10:37:47,534 INFO namenode.FSImageFormatProtobuf: Saving image file /scratch/andres.collares/nameNode/current/fsimage.ckpt_0000000000000000000 using no compression
+2022-07-31 10:37:47,671 INFO namenode.FSImageFormatProtobuf: Image file /scratch/andres.collares/nameNode/current/fsimage.ckpt_0000000000000000000 of size 410 bytes saved in 0 seconds .
+2022-07-31 10:37:47,695 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+2022-07-31 10:37:47,812 INFO namenode.FSNamesystem: Stopping services started for active state
+2022-07-31 10:37:47,812 INFO namenode.FSNamesystem: Stopping services started for standby state
+2022-07-31 10:37:47,817 INFO namenode.FSImage: FSImageSaver clean checkpoint: txid=0 when meet shutdown.
+2022-07-31 10:37:47,817 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at node04.datos.cluster.uy/10.0.187.104
+************************************************************/
+2022-07-31 10:38:04,041 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 10:38:06,061 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 10:38:09,393 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 10:56:59,284 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 10:57:00,302 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-07-31 10:57:01,166 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/andres.collares/.staging/job_1659274676109_0001
+2022-07-31 10:57:01,639 INFO input.FileInputFormat: Total input files to process : 33
+2022-07-31 10:57:01,755 INFO mapreduce.JobSubmitter: number of splits:598
+2022-07-31 10:57:01,892 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1659274676109_0001
+2022-07-31 10:57:01,892 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-07-31 10:57:02,243 INFO conf.Configuration: resource-types.xml not found
+2022-07-31 10:57:02,243 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-07-31 10:57:02,869 INFO impl.YarnClientImpl: Submitted application application_1659274676109_0001
+2022-07-31 10:57:02,907 INFO mapreduce.Job: The url to track the job: http://node04.datos.cluster.uy:8088/proxy/application_1659274676109_0001/
+2022-07-31 10:57:02,908 INFO mapreduce.Job: Running job: job_1659274676109_0001
+2022-07-31 10:57:15,105 INFO mapreduce.Job: Job job_1659274676109_0001 running in uber mode : false
+2022-07-31 10:57:15,107 INFO mapreduce.Job:  map 0% reduce 0%
+2022-07-31 10:57:31,270 INFO mapreduce.Job:  map 1% reduce 0%
+2022-07-31 10:57:34,289 INFO mapreduce.Job:  map 2% reduce 0%
+2022-07-31 10:57:36,304 INFO mapreduce.Job:  map 3% reduce 0%
+2022-07-31 10:57:38,318 INFO mapreduce.Job:  map 4% reduce 0%
+2022-07-31 10:57:40,329 INFO mapreduce.Job:  map 5% reduce 0%
+2022-07-31 10:57:47,388 INFO mapreduce.Job:  map 6% reduce 0%
+2022-07-31 10:57:54,425 INFO mapreduce.Job:  map 7% reduce 0%
+2022-07-31 10:57:55,433 INFO mapreduce.Job:  map 8% reduce 0%
+2022-07-31 10:57:57,445 INFO mapreduce.Job:  map 9% reduce 0%
+2022-07-31 10:57:59,464 INFO mapreduce.Job:  map 10% reduce 0%
+2022-07-31 10:58:04,491 INFO mapreduce.Job:  map 11% reduce 0%
+2022-07-31 10:58:08,520 INFO mapreduce.Job:  map 12% reduce 0%
+2022-07-31 10:58:12,548 INFO mapreduce.Job:  map 13% reduce 0%
+2022-07-31 10:58:14,559 INFO mapreduce.Job:  map 14% reduce 0%
+2022-07-31 10:58:15,815 INFO mapreduce.Job:  map 15% reduce 0%
+2022-07-31 10:58:17,829 INFO mapreduce.Job:  map 16% reduce 0%
+2022-07-31 10:58:20,845 INFO mapreduce.Job:  map 17% reduce 0%
+2022-07-31 10:58:28,889 INFO mapreduce.Job:  map 18% reduce 0%
+2022-07-31 10:58:32,247 INFO mapreduce.Job:  map 19% reduce 0%
+2022-07-31 10:58:38,281 INFO mapreduce.Job:  map 20% reduce 0%
+2022-07-31 10:58:39,286 INFO mapreduce.Job:  map 21% reduce 0%
+2022-07-31 10:58:45,313 INFO mapreduce.Job:  map 22% reduce 0%
+2022-07-31 10:58:52,351 INFO mapreduce.Job:  map 23% reduce 0%
+2022-07-31 10:58:54,363 INFO mapreduce.Job:  map 25% reduce 0%
+2022-07-31 10:58:56,374 INFO mapreduce.Job:  map 26% reduce 0%
+2022-07-31 10:59:06,416 INFO mapreduce.Job:  map 27% reduce 0%
+2022-07-31 10:59:09,457 INFO mapreduce.Job:  map 28% reduce 0%
+2022-07-31 10:59:11,474 INFO mapreduce.Job:  map 29% reduce 0%
+2022-07-31 10:59:12,478 INFO mapreduce.Job:  map 30% reduce 0%
+2022-07-31 10:59:16,496 INFO mapreduce.Job:  map 31% reduce 0%
+2022-07-31 10:59:20,512 INFO mapreduce.Job:  map 32% reduce 0%
+2022-07-31 10:59:26,566 INFO mapreduce.Job:  map 33% reduce 0%
+2022-07-31 10:59:27,572 INFO mapreduce.Job:  map 34% reduce 0%
+2022-07-31 10:59:28,575 INFO mapreduce.Job:  map 35% reduce 0%
+2022-07-31 10:59:30,583 INFO mapreduce.Job:  map 36% reduce 0%
+2022-07-31 10:59:41,621 INFO mapreduce.Job:  map 37% reduce 0%
+2022-07-31 10:59:42,627 INFO mapreduce.Job:  map 38% reduce 0%
+2022-07-31 10:59:46,645 INFO mapreduce.Job:  map 39% reduce 0%
+2022-07-31 10:59:47,650 INFO mapreduce.Job:  map 40% reduce 0%
+2022-07-31 10:59:55,676 INFO mapreduce.Job:  map 42% reduce 0%
+2022-07-31 11:00:00,692 INFO mapreduce.Job:  map 43% reduce 0%
+2022-07-31 11:00:04,707 INFO mapreduce.Job:  map 44% reduce 0%
+2022-07-31 11:00:05,710 INFO mapreduce.Job:  map 45% reduce 0%
+2022-07-31 11:00:06,713 INFO mapreduce.Job:  map 46% reduce 0%
+2022-07-31 11:00:11,727 INFO mapreduce.Job:  map 47% reduce 0%
+2022-07-31 11:00:17,033 INFO mapreduce.Job:  map 48% reduce 0%
+2022-07-31 11:00:18,036 INFO mapreduce.Job:  map 49% reduce 0%
+2022-07-31 11:00:20,061 INFO mapreduce.Job:  map 50% reduce 0%
+2022-07-31 11:00:22,068 INFO mapreduce.Job:  map 51% reduce 0%
+2022-07-31 11:00:24,076 INFO mapreduce.Job:  map 52% reduce 0%
+2022-07-31 11:00:32,103 INFO mapreduce.Job:  map 54% reduce 0%
+2022-07-31 11:00:37,123 INFO mapreduce.Job:  map 55% reduce 0%
+2022-07-31 11:00:40,131 INFO mapreduce.Job:  map 55% reduce 5%
+2022-07-31 11:00:41,134 INFO mapreduce.Job:  map 55% reduce 14%
+2022-07-31 11:00:43,140 INFO mapreduce.Job:  map 56% reduce 14%
+2022-07-31 11:00:45,489 INFO mapreduce.Job:  map 57% reduce 18%
+2022-07-31 11:00:47,495 INFO mapreduce.Job:  map 57% reduce 19%
+2022-07-31 11:00:49,500 INFO mapreduce.Job:  map 58% reduce 19%
+2022-07-31 11:00:54,518 INFO mapreduce.Job:  map 59% reduce 19%
+2022-07-31 11:00:58,531 INFO mapreduce.Job:  map 60% reduce 19%
+2022-07-31 11:00:59,535 INFO mapreduce.Job:  map 60% reduce 20%
+2022-07-31 11:01:00,538 INFO mapreduce.Job:  map 61% reduce 20%
+2022-07-31 11:01:06,556 INFO mapreduce.Job:  map 62% reduce 20%
+2022-07-31 11:01:10,567 INFO mapreduce.Job:  map 63% reduce 21%
+2022-07-31 11:01:12,574 INFO mapreduce.Job:  map 64% reduce 21%
+2022-07-31 11:01:16,610 INFO mapreduce.Job:  map 65% reduce 21%
+2022-07-31 11:01:21,622 INFO mapreduce.Job:  map 65% reduce 22%
+2022-07-31 11:01:24,468 INFO mapreduce.Job:  map 66% reduce 22%
+2022-07-31 11:01:25,471 INFO mapreduce.Job:  map 67% reduce 22%
+2022-07-31 11:01:32,491 INFO mapreduce.Job:  map 68% reduce 22%
+2022-07-31 11:01:35,502 INFO mapreduce.Job:  map 70% reduce 23%
+2022-07-31 11:01:43,523 INFO mapreduce.Job:  map 71% reduce 23%
+2022-07-31 11:01:46,533 INFO mapreduce.Job:  map 72% reduce 23%
+2022-07-31 11:01:47,536 INFO mapreduce.Job:  map 73% reduce 24%
+2022-07-31 11:01:54,554 INFO mapreduce.Job:  map 74% reduce 24%
+2022-07-31 11:01:57,563 INFO mapreduce.Job:  map 75% reduce 24%
+2022-07-31 11:01:59,569 INFO mapreduce.Job:  map 75% reduce 25%
+2022-07-31 11:02:02,576 INFO mapreduce.Job:  map 76% reduce 25%
+2022-07-31 11:02:05,584 INFO mapreduce.Job:  map 77% reduce 25%
+2022-07-31 11:02:08,593 INFO mapreduce.Job:  map 78% reduce 25%
+2022-07-31 11:02:09,751 INFO mapreduce.Job:  map 78% reduce 26%
+2022-07-31 11:02:12,763 INFO mapreduce.Job:  map 79% reduce 26%
+2022-07-31 11:02:17,989 INFO mapreduce.Job:  map 80% reduce 26%
+2022-07-31 11:02:19,994 INFO mapreduce.Job:  map 81% reduce 26%
+2022-07-31 11:02:22,000 INFO mapreduce.Job:  map 81% reduce 27%
+2022-07-31 11:02:24,005 INFO mapreduce.Job:  map 82% reduce 27%
+2022-07-31 11:02:28,014 INFO mapreduce.Job:  map 83% reduce 27%
+2022-07-31 11:02:30,019 INFO mapreduce.Job:  map 83% reduce 28%
+2022-07-31 11:02:33,030 INFO mapreduce.Job:  map 84% reduce 28%
+2022-07-31 11:02:34,038 INFO mapreduce.Job:  map 85% reduce 28%
+2022-07-31 11:02:37,045 INFO mapreduce.Job:  map 86% reduce 28%
+2022-07-31 11:02:41,055 INFO mapreduce.Job:  map 86% reduce 29%
+2022-07-31 11:02:42,058 INFO mapreduce.Job:  map 87% reduce 29%
+2022-07-31 11:02:44,064 INFO mapreduce.Job:  map 88% reduce 29%
+2022-07-31 11:02:47,070 INFO mapreduce.Job:  map 89% reduce 29%
+2022-07-31 11:02:52,083 INFO mapreduce.Job:  map 90% reduce 30%
+2022-07-31 11:02:54,111 INFO mapreduce.Job:  map 91% reduce 30%
+2022-07-31 11:03:01,135 INFO mapreduce.Job:  map 93% reduce 30%
+2022-07-31 11:03:04,147 INFO mapreduce.Job:  map 93% reduce 31%
+2022-07-31 11:03:05,159 INFO mapreduce.Job:  map 94% reduce 31%
+2022-07-31 11:03:10,177 INFO mapreduce.Job:  map 95% reduce 31%
+2022-07-31 11:03:12,182 INFO mapreduce.Job:  map 96% reduce 32%
+2022-07-31 11:03:13,185 INFO mapreduce.Job:  map 97% reduce 32%
+2022-07-31 11:03:18,206 INFO mapreduce.Job:  map 98% reduce 32%
+2022-07-31 11:03:19,209 INFO mapreduce.Job:  map 99% reduce 32%
+2022-07-31 11:03:22,217 INFO mapreduce.Job:  map 100% reduce 33%
+2022-07-31 11:03:24,223 INFO mapreduce.Job:  map 100% reduce 50%
+2022-07-31 11:03:25,227 INFO mapreduce.Job:  map 100% reduce 100%
+2022-07-31 11:03:27,238 INFO mapreduce.Job: Job job_1659274676109_0001 completed successfully
+2022-07-31 11:03:27,365 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=115444
+		FILE: Number of bytes written=166626554
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=78131265959
+		HDFS: Number of bytes written=17441
+		HDFS: Number of read operations=1814
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=8
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=598
+		Launched reduce tasks=4
+		Data-local map tasks=598
+		Total time spent by all maps in occupied slots (ms)=13426916
+		Total time spent by all reduces in occupied slots (ms)=2881812
+		Total time spent by all map tasks (ms)=6713458
+		Total time spent by all reduce tasks (ms)=720453
+		Total vcore-milliseconds taken by all map tasks=6713458
+		Total vcore-milliseconds taken by all reduce tasks=720453
+		Total megabyte-milliseconds taken by all map tasks=27498323968
+		Total megabyte-milliseconds taken by all reduce tasks=5901950976
+	Map-Reduce Framework
+		Map input records=635280850
+		Map output records=635280850
+		Map output bytes=9529183948
+		Map output materialized bytes=129772
+		Input split bytes=65777
+		Combine input records=635280850
+		Combine output records=6786
+		Reduce input groups=965
+		Reduce shuffle bytes=129772
+		Reduce input records=6786
+		Reduce output records=965
+		Spilled Records=13572
+		Shuffled Maps =2392
+		Failed Shuffles=0
+		Merged Map outputs=2392
+		GC time elapsed (ms)=221268
+		CPU time spent (ms)=5441830
+		Physical memory (bytes) snapshot=744515039232
+		Virtual memory (bytes) snapshot=3139722694656
+		Total committed heap usage (bytes)=1106199969792
+		Peak Map Physical memory (bytes)=1290498048
+		Peak Map Virtual memory (bytes)=5204107264
+		Peak Reduce Physical memory (bytes)=701685760
+		Peak Reduce Virtual memory (bytes)=8538603520
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=78131200182
+	File Output Format Counters 
+		Bytes Written=17441
+2022-07-31 11:03:28,460 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+copyToLocal: `./outdaily-trips': File exists
+2022-07-31 11:03:30,328 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 11:03:30,966 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-07-31 11:03:31,360 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/andres.collares/.staging/job_1659274676109_0002
+2022-07-31 11:03:31,632 INFO input.FileInputFormat: Total input files to process : 33
+2022-07-31 11:03:31,686 INFO mapreduce.JobSubmitter: number of splits:598
+2022-07-31 11:03:31,779 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1659274676109_0002
+2022-07-31 11:03:31,779 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-07-31 11:03:31,925 INFO conf.Configuration: resource-types.xml not found
+2022-07-31 11:03:31,926 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-07-31 11:03:31,983 INFO impl.YarnClientImpl: Submitted application application_1659274676109_0002
+2022-07-31 11:03:32,011 INFO mapreduce.Job: The url to track the job: http://node04.datos.cluster.uy:8088/proxy/application_1659274676109_0002/
+2022-07-31 11:03:32,011 INFO mapreduce.Job: Running job: job_1659274676109_0002
+2022-07-31 11:03:40,141 INFO mapreduce.Job: Job job_1659274676109_0002 running in uber mode : false
+2022-07-31 11:03:40,143 INFO mapreduce.Job:  map 0% reduce 0%
+2022-07-31 11:03:54,342 INFO mapreduce.Job:  map 1% reduce 0%
+2022-07-31 11:03:56,357 INFO mapreduce.Job:  map 3% reduce 0%
+2022-07-31 11:03:57,363 INFO mapreduce.Job:  map 4% reduce 0%
+2022-07-31 11:04:05,410 INFO mapreduce.Job:  map 5% reduce 0%
+2022-07-31 11:04:09,435 INFO mapreduce.Job:  map 7% reduce 0%
+2022-07-31 11:04:10,442 INFO mapreduce.Job:  map 8% reduce 0%
+2022-07-31 11:04:15,467 INFO mapreduce.Job:  map 9% reduce 0%
+2022-07-31 11:04:20,505 INFO mapreduce.Job:  map 10% reduce 0%
+2022-07-31 11:04:21,510 INFO mapreduce.Job:  map 11% reduce 0%
+2022-07-31 11:04:22,514 INFO mapreduce.Job:  map 12% reduce 0%
+2022-07-31 11:04:26,535 INFO mapreduce.Job:  map 13% reduce 0%
+2022-07-31 11:04:32,564 INFO mapreduce.Job:  map 14% reduce 0%
+2022-07-31 11:04:34,580 INFO mapreduce.Job:  map 15% reduce 0%
+2022-07-31 11:04:35,585 INFO mapreduce.Job:  map 16% reduce 0%
+2022-07-31 11:04:37,593 INFO mapreduce.Job:  map 17% reduce 0%
+2022-07-31 11:04:42,616 INFO mapreduce.Job:  map 18% reduce 0%
+2022-07-31 11:04:45,636 INFO mapreduce.Job:  map 19% reduce 0%
+2022-07-31 11:04:46,641 INFO mapreduce.Job:  map 20% reduce 0%
+2022-07-31 11:04:48,652 INFO mapreduce.Job:  map 21% reduce 0%
+2022-07-31 11:04:52,674 INFO mapreduce.Job:  map 22% reduce 0%
+2022-07-31 11:04:56,697 INFO mapreduce.Job:  map 23% reduce 0%
+2022-07-31 11:04:57,701 INFO mapreduce.Job:  map 24% reduce 0%
+2022-07-31 11:05:00,713 INFO mapreduce.Job:  map 25% reduce 0%
+2022-07-31 11:05:03,742 INFO mapreduce.Job:  map 26% reduce 0%
+2022-07-31 11:05:09,772 INFO mapreduce.Job:  map 28% reduce 0%
+2022-07-31 11:05:13,792 INFO mapreduce.Job:  map 30% reduce 0%
+2022-07-31 11:05:19,835 INFO mapreduce.Job:  map 31% reduce 0%
+2022-07-31 11:05:21,842 INFO mapreduce.Job:  map 32% reduce 0%
+2022-07-31 11:05:24,856 INFO mapreduce.Job:  map 33% reduce 0%
+2022-07-31 11:05:26,865 INFO mapreduce.Job:  map 34% reduce 0%
+2022-07-31 11:05:28,878 INFO mapreduce.Job:  map 35% reduce 0%
+2022-07-31 11:05:33,915 INFO mapreduce.Job:  map 36% reduce 0%
+2022-07-31 11:05:38,944 INFO mapreduce.Job:  map 37% reduce 0%
+2022-07-31 11:05:39,948 INFO mapreduce.Job:  map 38% reduce 0%
+2022-07-31 11:05:40,951 INFO mapreduce.Job:  map 39% reduce 0%
+2022-07-31 11:05:44,968 INFO mapreduce.Job:  map 40% reduce 0%
+2022-07-31 11:05:48,985 INFO mapreduce.Job:  map 41% reduce 0%
+2022-07-31 11:05:49,989 INFO mapreduce.Job:  map 42% reduce 0%
+2022-07-31 11:05:52,003 INFO mapreduce.Job:  map 43% reduce 0%
+2022-07-31 11:05:57,023 INFO mapreduce.Job:  map 44% reduce 0%
+2022-07-31 11:06:01,035 INFO mapreduce.Job:  map 45% reduce 0%
+2022-07-31 11:06:03,057 INFO mapreduce.Job:  map 46% reduce 0%
+2022-07-31 11:06:06,071 INFO mapreduce.Job:  map 47% reduce 0%
+2022-07-31 11:06:08,077 INFO mapreduce.Job:  map 48% reduce 0%
+2022-07-31 11:06:11,104 INFO mapreduce.Job:  map 49% reduce 0%
+2022-07-31 11:06:14,114 INFO mapreduce.Job:  map 50% reduce 0%
+2022-07-31 11:06:15,117 INFO mapreduce.Job:  map 51% reduce 0%
+2022-07-31 11:06:18,129 INFO mapreduce.Job:  map 52% reduce 0%
+2022-07-31 11:06:22,144 INFO mapreduce.Job:  map 53% reduce 0%
+2022-07-31 11:06:24,358 INFO mapreduce.Job:  map 54% reduce 0%
+2022-07-31 11:06:26,365 INFO mapreduce.Job:  map 55% reduce 0%
+2022-07-31 11:06:34,391 INFO mapreduce.Job:  map 56% reduce 0%
+2022-07-31 11:06:35,397 INFO mapreduce.Job:  map 57% reduce 19%
+2022-07-31 11:06:36,401 INFO mapreduce.Job:  map 58% reduce 19%
+2022-07-31 11:06:44,433 INFO mapreduce.Job:  map 59% reduce 19%
+2022-07-31 11:06:47,444 INFO mapreduce.Job:  map 60% reduce 20%
+2022-07-31 11:06:48,447 INFO mapreduce.Job:  map 61% reduce 20%
+2022-07-31 11:06:54,478 INFO mapreduce.Job:  map 62% reduce 20%
+2022-07-31 11:06:57,487 INFO mapreduce.Job:  map 64% reduce 20%
+2022-07-31 11:06:59,492 INFO mapreduce.Job:  map 64% reduce 21%
+2022-07-31 11:07:05,519 INFO mapreduce.Job:  map 65% reduce 21%
+2022-07-31 11:07:07,524 INFO mapreduce.Job:  map 66% reduce 21%
+2022-07-31 11:07:10,532 INFO mapreduce.Job:  map 67% reduce 21%
+2022-07-31 11:07:11,534 INFO mapreduce.Job:  map 67% reduce 22%
+2022-07-31 11:07:14,542 INFO mapreduce.Job:  map 68% reduce 22%
+2022-07-31 11:07:17,554 INFO mapreduce.Job:  map 68% reduce 23%
+2022-07-31 11:07:18,557 INFO mapreduce.Job:  map 69% reduce 23%
+2022-07-31 11:07:20,562 INFO mapreduce.Job:  map 70% reduce 23%
+2022-07-31 11:07:23,571 INFO mapreduce.Job:  map 71% reduce 23%
+2022-07-31 11:07:27,581 INFO mapreduce.Job:  map 72% reduce 23%
+2022-07-31 11:07:29,587 INFO mapreduce.Job:  map 72% reduce 24%
+2022-07-31 11:07:31,591 INFO mapreduce.Job:  map 73% reduce 24%
+2022-07-31 11:07:34,597 INFO mapreduce.Job:  map 74% reduce 24%
+2022-07-31 11:07:35,600 INFO mapreduce.Job:  map 74% reduce 25%
+2022-07-31 11:07:37,606 INFO mapreduce.Job:  map 75% reduce 25%
+2022-07-31 11:07:41,615 INFO mapreduce.Job:  map 76% reduce 25%
+2022-07-31 11:07:45,626 INFO mapreduce.Job:  map 77% reduce 25%
+2022-07-31 11:07:46,631 INFO mapreduce.Job:  map 78% reduce 25%
+2022-07-31 11:07:47,633 INFO mapreduce.Job:  map 78% reduce 26%
+2022-07-31 11:07:49,639 INFO mapreduce.Job:  map 79% reduce 26%
+2022-07-31 11:07:54,651 INFO mapreduce.Job:  map 80% reduce 26%
+2022-07-31 11:07:56,658 INFO mapreduce.Job:  map 81% reduce 26%
+2022-07-31 11:07:59,674 INFO mapreduce.Job:  map 82% reduce 27%
+2022-07-31 11:08:04,686 INFO mapreduce.Job:  map 83% reduce 27%
+2022-07-31 11:08:05,688 INFO mapreduce.Job:  map 83% reduce 28%
+2022-07-31 11:08:06,697 INFO mapreduce.Job:  map 84% reduce 28%
+2022-07-31 11:08:10,706 INFO mapreduce.Job:  map 85% reduce 28%
+2022-07-31 11:08:14,716 INFO mapreduce.Job:  map 86% reduce 28%
+2022-07-31 11:08:16,722 INFO mapreduce.Job:  map 87% reduce 28%
+2022-07-31 11:08:17,728 INFO mapreduce.Job:  map 87% reduce 29%
+2022-07-31 11:08:20,738 INFO mapreduce.Job:  map 88% reduce 29%
+2022-07-31 11:08:25,747 INFO mapreduce.Job:  map 89% reduce 29%
+2022-07-31 11:08:26,750 INFO mapreduce.Job:  map 90% reduce 29%
+2022-07-31 11:08:29,756 INFO mapreduce.Job:  map 90% reduce 30%
+2022-07-31 11:08:31,762 INFO mapreduce.Job:  map 91% reduce 30%
+2022-07-31 11:08:34,772 INFO mapreduce.Job:  map 92% reduce 30%
+2022-07-31 11:08:35,774 INFO mapreduce.Job:  map 92% reduce 31%
+2022-07-31 11:08:37,779 INFO mapreduce.Job:  map 93% reduce 31%
+2022-07-31 11:08:42,788 INFO mapreduce.Job:  map 94% reduce 31%
+2022-07-31 11:08:45,795 INFO mapreduce.Job:  map 95% reduce 31%
+2022-07-31 11:08:46,797 INFO mapreduce.Job:  map 96% reduce 31%
+2022-07-31 11:08:47,799 INFO mapreduce.Job:  map 96% reduce 32%
+2022-07-31 11:08:51,818 INFO mapreduce.Job:  map 97% reduce 32%
+2022-07-31 11:08:52,821 INFO mapreduce.Job:  map 98% reduce 32%
+2022-07-31 11:08:53,829 INFO mapreduce.Job:  map 98% reduce 33%
+2022-07-31 11:08:54,832 INFO mapreduce.Job:  map 99% reduce 33%
+2022-07-31 11:08:57,839 INFO mapreduce.Job:  map 100% reduce 33%
+2022-07-31 11:08:59,848 INFO mapreduce.Job:  map 100% reduce 100%
+2022-07-31 11:09:00,859 INFO mapreduce.Job: Job job_1659274676109_0002 completed successfully
+2022-07-31 11:09:00,982 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=13351463
+		FILE: Number of bytes written=193412617
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=78131265959
+		HDFS: Number of bytes written=1965732
+		HDFS: Number of read operations=1809
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=6
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=598
+		Launched reduce tasks=3
+		Data-local map tasks=598
+		Total time spent by all maps in occupied slots (ms)=12070150
+		Total time spent by all reduces in occupied slots (ms)=1923748
+		Total time spent by all map tasks (ms)=6035075
+		Total time spent by all reduce tasks (ms)=480937
+		Total vcore-milliseconds taken by all map tasks=6035075
+		Total vcore-milliseconds taken by all reduce tasks=480937
+		Total megabyte-milliseconds taken by all map tasks=24719667200
+		Total megabyte-milliseconds taken by all reduce tasks=3939835904
+	Map-Reduce Framework
+		Map input records=635280850
+		Map output records=635280850
+		Map output bytes=18161102794
+		Map output materialized bytes=13362209
+		Input split bytes=65777
+		Combine input records=635280850
+		Combine output records=420930
+		Reduce input groups=63342
+		Reduce shuffle bytes=13362209
+		Reduce input records=420930
+		Reduce output records=63342
+		Spilled Records=841860
+		Shuffled Maps =1794
+		Failed Shuffles=0
+		Merged Map outputs=1794
+		GC time elapsed (ms)=252336
+		CPU time spent (ms)=6282260
+		Physical memory (bytes) snapshot=760333582336
+		Virtual memory (bytes) snapshot=3134568161280
+		Total committed heap usage (bytes)=1071933554688
+		Peak Map Physical memory (bytes)=1328427008
+		Peak Map Virtual memory (bytes)=5234823168
+		Peak Reduce Physical memory (bytes)=749498368
+		Peak Reduce Virtual memory (bytes)=8561643520
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=78131200182
+	File Output Format Counters 
+		Bytes Written=1965732
+2022-07-31 11:09:01,934 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+copyToLocal: `./outdaily-per-neighborhood': File exists
+2022-07-31 11:09:04,152 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 11:09:04,811 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-07-31 11:09:05,217 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/andres.collares/.staging/job_1659274676109_0003
+2022-07-31 11:09:05,503 INFO input.FileInputFormat: Total input files to process : 33
+2022-07-31 11:09:05,561 INFO mapreduce.JobSubmitter: number of splits:598
+2022-07-31 11:09:05,652 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1659274676109_0003
+2022-07-31 11:09:05,652 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-07-31 11:09:05,794 INFO conf.Configuration: resource-types.xml not found
+2022-07-31 11:09:05,795 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-07-31 11:09:05,859 INFO impl.YarnClientImpl: Submitted application application_1659274676109_0003
+2022-07-31 11:09:05,887 INFO mapreduce.Job: The url to track the job: http://node04.datos.cluster.uy:8088/proxy/application_1659274676109_0003/
+2022-07-31 11:09:05,887 INFO mapreduce.Job: Running job: job_1659274676109_0003
+2022-07-31 11:09:14,012 INFO mapreduce.Job: Job job_1659274676109_0003 running in uber mode : false
+2022-07-31 11:09:14,015 INFO mapreduce.Job:  map 0% reduce 0%
+2022-07-31 11:09:28,198 INFO mapreduce.Job:  map 1% reduce 0%
+2022-07-31 11:09:29,209 INFO mapreduce.Job:  map 3% reduce 0%
+2022-07-31 11:09:30,218 INFO mapreduce.Job:  map 4% reduce 0%
+2022-07-31 11:09:39,287 INFO mapreduce.Job:  map 5% reduce 0%
+2022-07-31 11:09:41,298 INFO mapreduce.Job:  map 6% reduce 0%
+2022-07-31 11:09:42,305 INFO mapreduce.Job:  map 7% reduce 0%
+2022-07-31 11:09:43,314 INFO mapreduce.Job:  map 8% reduce 0%
+2022-07-31 11:09:48,350 INFO mapreduce.Job:  map 9% reduce 0%
+2022-07-31 11:09:55,404 INFO mapreduce.Job:  map 10% reduce 0%
+2022-07-31 11:09:56,412 INFO mapreduce.Job:  map 12% reduce 0%
+2022-07-31 11:09:59,431 INFO mapreduce.Job:  map 13% reduce 0%
+2022-07-31 11:10:05,469 INFO mapreduce.Job:  map 14% reduce 0%
+2022-07-31 11:10:07,487 INFO mapreduce.Job:  map 15% reduce 0%
+2022-07-31 11:10:09,501 INFO mapreduce.Job:  map 17% reduce 0%
+2022-07-31 11:10:18,565 INFO mapreduce.Job:  map 18% reduce 0%
+2022-07-31 11:10:20,574 INFO mapreduce.Job:  map 19% reduce 0%
+2022-07-31 11:10:23,588 INFO mapreduce.Job:  map 20% reduce 0%
+2022-07-31 11:10:24,593 INFO mapreduce.Job:  map 21% reduce 0%
+2022-07-31 11:10:27,607 INFO mapreduce.Job:  map 22% reduce 0%
+2022-07-31 11:10:30,622 INFO mapreduce.Job:  map 23% reduce 0%
+2022-07-31 11:10:34,639 INFO mapreduce.Job:  map 24% reduce 0%
+2022-07-31 11:10:36,649 INFO mapreduce.Job:  map 25% reduce 0%
+2022-07-31 11:10:37,653 INFO mapreduce.Job:  map 26% reduce 0%
+2022-07-31 11:10:41,675 INFO mapreduce.Job:  map 27% reduce 0%
+2022-07-31 11:10:44,695 INFO mapreduce.Job:  map 28% reduce 0%
+2022-07-31 11:10:46,702 INFO mapreduce.Job:  map 29% reduce 0%
+2022-07-31 11:10:47,706 INFO mapreduce.Job:  map 30% reduce 0%
+2022-07-31 11:10:51,731 INFO mapreduce.Job:  map 31% reduce 0%
+2022-07-31 11:10:54,752 INFO mapreduce.Job:  map 32% reduce 0%
+2022-07-31 11:10:56,759 INFO mapreduce.Job:  map 33% reduce 0%
+2022-07-31 11:10:59,780 INFO mapreduce.Job:  map 34% reduce 0%
+2022-07-31 11:11:03,821 INFO mapreduce.Job:  map 35% reduce 0%
+2022-07-31 11:11:05,827 INFO mapreduce.Job:  map 36% reduce 0%
+2022-07-31 11:11:07,836 INFO mapreduce.Job:  map 37% reduce 0%
+2022-07-31 11:11:09,849 INFO mapreduce.Job:  map 38% reduce 0%
+2022-07-31 11:11:13,865 INFO mapreduce.Job:  map 39% reduce 0%
+2022-07-31 11:11:17,910 INFO mapreduce.Job:  map 40% reduce 0%
+2022-07-31 11:11:18,925 INFO mapreduce.Job:  map 41% reduce 0%
+2022-07-31 11:11:20,940 INFO mapreduce.Job:  map 42% reduce 0%
+2022-07-31 11:11:22,950 INFO mapreduce.Job:  map 43% reduce 0%
+2022-07-31 11:11:28,136 INFO mapreduce.Job:  map 44% reduce 0%
+2022-07-31 11:11:29,139 INFO mapreduce.Job:  map 45% reduce 0%
+2022-07-31 11:11:33,150 INFO mapreduce.Job:  map 46% reduce 0%
+2022-07-31 11:11:34,154 INFO mapreduce.Job:  map 47% reduce 0%
+2022-07-31 11:11:38,180 INFO mapreduce.Job:  map 48% reduce 0%
+2022-07-31 11:11:39,189 INFO mapreduce.Job:  map 49% reduce 0%
+2022-07-31 11:11:42,200 INFO mapreduce.Job:  map 50% reduce 0%
+2022-07-31 11:11:44,206 INFO mapreduce.Job:  map 51% reduce 0%
+2022-07-31 11:11:47,221 INFO mapreduce.Job:  map 52% reduce 0%
+2022-07-31 11:11:50,240 INFO mapreduce.Job:  map 53% reduce 0%
+2022-07-31 11:11:54,255 INFO mapreduce.Job:  map 54% reduce 0%
+2022-07-31 11:11:56,479 INFO mapreduce.Job:  map 55% reduce 0%
+2022-07-31 11:12:03,497 INFO mapreduce.Job:  map 56% reduce 12%
+2022-07-31 11:12:04,501 INFO mapreduce.Job:  map 56% reduce 18%
+2022-07-31 11:12:06,507 INFO mapreduce.Job:  map 57% reduce 18%
+2022-07-31 11:12:07,510 INFO mapreduce.Job:  map 58% reduce 18%
+2022-07-31 11:12:09,515 INFO mapreduce.Job:  map 58% reduce 19%
+2022-07-31 11:12:11,542 INFO mapreduce.Job:  map 59% reduce 19%
+2022-07-31 11:12:15,554 INFO mapreduce.Job:  map 59% reduce 20%
+2022-07-31 11:12:17,560 INFO mapreduce.Job:  map 60% reduce 20%
+2022-07-31 11:12:18,563 INFO mapreduce.Job:  map 61% reduce 20%
+2022-07-31 11:12:20,569 INFO mapreduce.Job:  map 62% reduce 20%
+2022-07-31 11:12:22,576 INFO mapreduce.Job:  map 62% reduce 21%
+2022-07-31 11:12:27,029 INFO mapreduce.Job:  map 64% reduce 21%
+2022-07-31 11:12:31,046 INFO mapreduce.Job:  map 65% reduce 21%
+2022-07-31 11:12:34,056 INFO mapreduce.Job:  map 65% reduce 22%
+2022-07-31 11:12:37,063 INFO mapreduce.Job:  map 66% reduce 22%
+2022-07-31 11:12:38,066 INFO mapreduce.Job:  map 67% reduce 22%
+2022-07-31 11:12:40,071 INFO mapreduce.Job:  map 68% reduce 22%
+2022-07-31 11:12:46,099 INFO mapreduce.Job:  map 69% reduce 23%
+2022-07-31 11:12:47,102 INFO mapreduce.Job:  map 70% reduce 23%
+2022-07-31 11:12:50,109 INFO mapreduce.Job:  map 71% reduce 23%
+2022-07-31 11:12:53,124 INFO mapreduce.Job:  map 71% reduce 24%
+2022-07-31 11:12:54,128 INFO mapreduce.Job:  map 72% reduce 24%
+2022-07-31 11:12:57,137 INFO mapreduce.Job:  map 73% reduce 24%
+2022-07-31 11:13:01,150 INFO mapreduce.Job:  map 74% reduce 24%
+2022-07-31 11:13:04,164 INFO mapreduce.Job:  map 75% reduce 25%
+2022-07-31 11:13:08,174 INFO mapreduce.Job:  map 76% reduce 25%
+2022-07-31 11:13:11,182 INFO mapreduce.Job:  map 77% reduce 25%
+2022-07-31 11:13:14,195 INFO mapreduce.Job:  map 78% reduce 25%
+2022-07-31 11:13:16,201 INFO mapreduce.Job:  map 78% reduce 26%
+2022-07-31 11:13:17,203 INFO mapreduce.Job:  map 79% reduce 26%
+2022-07-31 11:13:20,213 INFO mapreduce.Job:  map 80% reduce 26%
+2022-07-31 11:13:22,220 INFO mapreduce.Job:  map 80% reduce 27%
+2022-07-31 11:13:23,222 INFO mapreduce.Job:  map 81% reduce 27%
+2022-07-31 11:13:26,230 INFO mapreduce.Job:  map 82% reduce 27%
+2022-07-31 11:13:30,240 INFO mapreduce.Job:  map 83% reduce 27%
+2022-07-31 11:13:34,253 INFO mapreduce.Job:  map 84% reduce 28%
+2022-07-31 11:13:37,265 INFO mapreduce.Job:  map 85% reduce 28%
+2022-07-31 11:13:39,270 INFO mapreduce.Job:  map 86% reduce 28%
+2022-07-31 11:13:41,275 INFO mapreduce.Job:  map 86% reduce 29%
+2022-07-31 11:13:44,282 INFO mapreduce.Job:  map 87% reduce 29%
+2022-07-31 11:13:46,287 INFO mapreduce.Job:  map 88% reduce 29%
+2022-07-31 11:13:49,609 INFO mapreduce.Job:  map 89% reduce 29%
+2022-07-31 11:13:52,616 INFO mapreduce.Job:  map 89% reduce 30%
+2022-07-31 11:13:53,619 INFO mapreduce.Job:  map 90% reduce 30%
+2022-07-31 11:13:58,630 INFO mapreduce.Job:  map 91% reduce 30%
+2022-07-31 11:14:00,639 INFO mapreduce.Job:  map 92% reduce 30%
+2022-07-31 11:14:02,644 INFO mapreduce.Job:  map 93% reduce 30%
+2022-07-31 11:14:04,650 INFO mapreduce.Job:  map 93% reduce 31%
+2022-07-31 11:14:06,654 INFO mapreduce.Job:  map 94% reduce 31%
+2022-07-31 11:14:10,665 INFO mapreduce.Job:  map 95% reduce 31%
+2022-07-31 11:14:11,669 INFO mapreduce.Job:  map 96% reduce 32%
+2022-07-31 11:14:13,676 INFO mapreduce.Job:  map 97% reduce 32%
+2022-07-31 11:14:17,685 INFO mapreduce.Job:  map 99% reduce 32%
+2022-07-31 11:14:18,689 INFO mapreduce.Job:  map 100% reduce 32%
+2022-07-31 11:14:20,697 INFO mapreduce.Job:  map 100% reduce 77%
+2022-07-31 11:14:21,701 INFO mapreduce.Job:  map 100% reduce 100%
+2022-07-31 11:14:21,706 INFO mapreduce.Job: Job job_1659274676109_0003 completed successfully
+2022-07-31 11:14:21,831 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=15323837
+		FILE: Number of bytes written=197354360
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=78131265959
+		HDFS: Number of bytes written=2382236
+		HDFS: Number of read operations=1809
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=6
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=598
+		Launched reduce tasks=3
+		Data-local map tasks=598
+		Total time spent by all maps in occupied slots (ms)=11586968
+		Total time spent by all reduces in occupied slots (ms)=1827588
+		Total time spent by all map tasks (ms)=5793484
+		Total time spent by all reduce tasks (ms)=456897
+		Total vcore-milliseconds taken by all map tasks=5793484
+		Total vcore-milliseconds taken by all reduce tasks=456897
+		Total megabyte-milliseconds taken by all map tasks=23730110464
+		Total megabyte-milliseconds taken by all reduce tasks=3742900224
+	Map-Reduce Framework
+		Map input records=635280850
+		Map output records=635280850
+		Map output bytes=11994798284
+		Map output materialized bytes=15334583
+		Input split bytes=65777
+		Combine input records=635280850
+		Combine output records=734359
+		Reduce input groups=121039
+		Reduce shuffle bytes=15334583
+		Reduce input records=734359
+		Reduce output records=121039
+		Spilled Records=1468718
+		Shuffled Maps =1794
+		Failed Shuffles=0
+		Merged Map outputs=1794
+		GC time elapsed (ms)=237699
+		CPU time spent (ms)=5500850
+		Physical memory (bytes) snapshot=746552107008
+		Virtual memory (bytes) snapshot=3131091910656
+		Total committed heap usage (bytes)=1075495567360
+		Peak Map Physical memory (bytes)=1279021056
+		Peak Map Virtual memory (bytes)=5201162240
+		Peak Reduce Physical memory (bytes)=769515520
+		Peak Reduce Virtual memory (bytes)=8559022080
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=78131200182
+	File Output Format Counters 
+		Bytes Written=2382236
+2022-07-31 11:14:22,890 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+copyToLocal: `./outdaily-per-busline': File exists
+2022-07-31 11:14:24,772 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 11:14:25,410 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-07-31 11:14:25,798 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/andres.collares/.staging/job_1659274676109_0004
+2022-07-31 11:14:26,071 INFO input.FileInputFormat: Total input files to process : 33
+2022-07-31 11:14:26,130 INFO mapreduce.JobSubmitter: number of splits:598
+2022-07-31 11:14:26,625 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1659274676109_0004
+2022-07-31 11:14:26,625 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-07-31 11:14:26,782 INFO conf.Configuration: resource-types.xml not found
+2022-07-31 11:14:26,783 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-07-31 11:14:26,838 INFO impl.YarnClientImpl: Submitted application application_1659274676109_0004
+2022-07-31 11:14:26,867 INFO mapreduce.Job: The url to track the job: http://node04.datos.cluster.uy:8088/proxy/application_1659274676109_0004/
+2022-07-31 11:14:26,867 INFO mapreduce.Job: Running job: job_1659274676109_0004
+2022-07-31 11:14:33,992 INFO mapreduce.Job: Job job_1659274676109_0004 running in uber mode : false
+2022-07-31 11:14:33,995 INFO mapreduce.Job:  map 0% reduce 0%
+2022-07-31 11:14:46,143 INFO mapreduce.Job:  map 1% reduce 0%
+2022-07-31 11:14:49,166 INFO mapreduce.Job:  map 3% reduce 0%
+2022-07-31 11:14:50,172 INFO mapreduce.Job:  map 4% reduce 0%
+2022-07-31 11:14:58,228 INFO mapreduce.Job:  map 5% reduce 0%
+2022-07-31 11:14:59,235 INFO mapreduce.Job:  map 6% reduce 0%
+2022-07-31 11:15:04,271 INFO mapreduce.Job:  map 8% reduce 0%
+2022-07-31 11:15:09,299 INFO mapreduce.Job:  map 9% reduce 0%
+2022-07-31 11:15:11,311 INFO mapreduce.Job:  map 10% reduce 0%
+2022-07-31 11:15:16,340 INFO mapreduce.Job:  map 12% reduce 0%
+2022-07-31 11:15:21,370 INFO mapreduce.Job:  map 13% reduce 0%
+2022-07-31 11:15:24,393 INFO mapreduce.Job:  map 14% reduce 0%
+2022-07-31 11:15:26,415 INFO mapreduce.Job:  map 15% reduce 0%
+2022-07-31 11:15:28,430 INFO mapreduce.Job:  map 16% reduce 0%
+2022-07-31 11:15:30,723 INFO mapreduce.Job:  map 17% reduce 0%
+2022-07-31 11:15:34,747 INFO mapreduce.Job:  map 18% reduce 0%
+2022-07-31 11:15:38,773 INFO mapreduce.Job:  map 19% reduce 0%
+2022-07-31 11:15:40,784 INFO mapreduce.Job:  map 20% reduce 0%
+2022-07-31 11:15:42,795 INFO mapreduce.Job:  map 21% reduce 0%
+2022-07-31 11:15:43,799 INFO mapreduce.Job:  map 22% reduce 0%
+2022-07-31 11:15:48,826 INFO mapreduce.Job:  map 23% reduce 0%
+2022-07-31 11:15:50,839 INFO mapreduce.Job:  map 24% reduce 0%
+2022-07-31 11:15:53,860 INFO mapreduce.Job:  map 25% reduce 0%
+2022-07-31 11:15:55,877 INFO mapreduce.Job:  map 26% reduce 0%
+2022-07-31 11:15:58,900 INFO mapreduce.Job:  map 27% reduce 0%
+2022-07-31 11:16:01,918 INFO mapreduce.Job:  map 28% reduce 0%
+2022-07-31 11:16:04,930 INFO mapreduce.Job:  map 29% reduce 0%
+2022-07-31 11:16:06,951 INFO mapreduce.Job:  map 30% reduce 0%
+2022-07-31 11:16:10,977 INFO mapreduce.Job:  map 31% reduce 0%
+2022-07-31 11:16:13,991 INFO mapreduce.Job:  map 32% reduce 0%
+2022-07-31 11:16:14,995 INFO mapreduce.Job:  map 33% reduce 0%
+2022-07-31 11:16:18,022 INFO mapreduce.Job:  map 34% reduce 0%
+2022-07-31 11:16:21,034 INFO mapreduce.Job:  map 35% reduce 0%
+2022-07-31 11:16:24,054 INFO mapreduce.Job:  map 36% reduce 0%
+2022-07-31 11:16:26,063 INFO mapreduce.Job:  map 37% reduce 0%
+2022-07-31 11:16:29,072 INFO mapreduce.Job:  map 38% reduce 0%
+2022-07-31 11:16:34,092 INFO mapreduce.Job:  map 39% reduce 0%
+2022-07-31 11:16:35,096 INFO mapreduce.Job:  map 40% reduce 0%
+2022-07-31 11:16:36,099 INFO mapreduce.Job:  map 41% reduce 0%
+2022-07-31 11:16:42,125 INFO mapreduce.Job:  map 42% reduce 0%
+2022-07-31 11:16:44,133 INFO mapreduce.Job:  map 43% reduce 0%
+2022-07-31 11:16:47,148 INFO mapreduce.Job:  map 44% reduce 0%
+2022-07-31 11:16:48,150 INFO mapreduce.Job:  map 45% reduce 0%
+2022-07-31 11:16:52,183 INFO mapreduce.Job:  map 46% reduce 0%
+2022-07-31 11:16:55,195 INFO mapreduce.Job:  map 47% reduce 0%
+2022-07-31 11:16:58,209 INFO mapreduce.Job:  map 48% reduce 0%
+2022-07-31 11:17:00,243 INFO mapreduce.Job:  map 49% reduce 0%
+2022-07-31 11:17:06,274 INFO mapreduce.Job:  map 50% reduce 0%
+2022-07-31 11:17:07,278 INFO mapreduce.Job:  map 51% reduce 0%
+2022-07-31 11:17:08,280 INFO mapreduce.Job:  map 52% reduce 0%
+2022-07-31 11:17:10,287 INFO mapreduce.Job:  map 53% reduce 0%
+2022-07-31 11:17:17,311 INFO mapreduce.Job:  map 54% reduce 0%
+2022-07-31 11:17:19,319 INFO mapreduce.Job:  map 55% reduce 0%
+2022-07-31 11:17:20,322 INFO mapreduce.Job:  map 56% reduce 0%
+2022-07-31 11:17:27,354 INFO mapreduce.Job:  map 57% reduce 6%
+2022-07-31 11:17:28,357 INFO mapreduce.Job:  map 57% reduce 19%
+2022-07-31 11:17:29,360 INFO mapreduce.Job:  map 58% reduce 19%
+2022-07-31 11:17:30,364 INFO mapreduce.Job:  map 59% reduce 19%
+2022-07-31 11:17:34,376 INFO mapreduce.Job:  map 59% reduce 20%
+2022-07-31 11:17:36,409 INFO mapreduce.Job:  map 60% reduce 20%
+2022-07-31 11:17:38,415 INFO mapreduce.Job:  map 61% reduce 20%
+2022-07-31 11:17:40,422 INFO mapreduce.Job:  map 62% reduce 20%
+2022-07-31 11:17:45,441 INFO mapreduce.Job:  map 63% reduce 20%
+2022-07-31 11:17:46,447 INFO mapreduce.Job:  map 63% reduce 21%
+2022-07-31 11:17:48,468 INFO mapreduce.Job:  map 64% reduce 21%
+2022-07-31 11:17:50,474 INFO mapreduce.Job:  map 65% reduce 21%
+2022-07-31 11:17:52,479 INFO mapreduce.Job:  map 65% reduce 22%
+2022-07-31 11:17:54,485 INFO mapreduce.Job:  map 66% reduce 22%
+2022-07-31 11:17:57,495 INFO mapreduce.Job:  map 67% reduce 22%
+2022-07-31 11:17:59,500 INFO mapreduce.Job:  map 68% reduce 22%
+2022-07-31 11:18:04,514 INFO mapreduce.Job:  map 69% reduce 23%
+2022-07-31 11:18:07,523 INFO mapreduce.Job:  map 70% reduce 23%
+2022-07-31 11:18:09,529 INFO mapreduce.Job:  map 71% reduce 23%
+2022-07-31 11:18:14,548 INFO mapreduce.Job:  map 72% reduce 23%
+2022-07-31 11:18:16,553 INFO mapreduce.Job:  map 72% reduce 24%
+2022-07-31 11:18:18,561 INFO mapreduce.Job:  map 73% reduce 24%
+2022-07-31 11:18:19,564 INFO mapreduce.Job:  map 74% reduce 24%
+2022-07-31 11:18:22,573 INFO mapreduce.Job:  map 74% reduce 25%
+2022-07-31 11:18:23,577 INFO mapreduce.Job:  map 75% reduce 25%
+2022-07-31 11:18:28,591 INFO mapreduce.Job:  map 76% reduce 25%
+2022-07-31 11:18:30,596 INFO mapreduce.Job:  map 77% reduce 25%
+2022-07-31 11:18:34,609 INFO mapreduce.Job:  map 78% reduce 26%
+2022-07-31 11:18:38,620 INFO mapreduce.Job:  map 79% reduce 26%
+2022-07-31 11:18:41,627 INFO mapreduce.Job:  map 80% reduce 26%
+2022-07-31 11:18:44,634 INFO mapreduce.Job:  map 81% reduce 26%
+2022-07-31 11:18:46,639 INFO mapreduce.Job:  map 81% reduce 27%
+2022-07-31 11:18:48,660 INFO mapreduce.Job:  map 82% reduce 27%
+2022-07-31 11:18:52,673 INFO mapreduce.Job:  map 83% reduce 27%
+2022-07-31 11:18:54,685 INFO mapreduce.Job:  map 84% reduce 27%
+2022-07-31 11:18:57,693 INFO mapreduce.Job:  map 85% reduce 27%
+2022-07-31 11:18:58,696 INFO mapreduce.Job:  map 85% reduce 28%
+2022-07-31 11:19:01,706 INFO mapreduce.Job:  map 86% reduce 28%
+2022-07-31 11:19:04,721 INFO mapreduce.Job:  map 87% reduce 29%
+2022-07-31 11:19:07,742 INFO mapreduce.Job:  map 88% reduce 29%
+2022-07-31 11:19:11,760 INFO mapreduce.Job:  map 89% reduce 29%
+2022-07-31 11:19:14,770 INFO mapreduce.Job:  map 90% reduce 29%
+2022-07-31 11:19:16,781 INFO mapreduce.Job:  map 91% reduce 30%
+2022-07-31 11:19:21,799 INFO mapreduce.Job:  map 92% reduce 30%
+2022-07-31 11:19:25,810 INFO mapreduce.Job:  map 93% reduce 30%
+2022-07-31 11:19:27,815 INFO mapreduce.Job:  map 94% reduce 30%
+2022-07-31 11:19:28,818 INFO mapreduce.Job:  map 94% reduce 31%
+2022-07-31 11:19:31,829 INFO mapreduce.Job:  map 95% reduce 31%
+2022-07-31 11:19:34,836 INFO mapreduce.Job:  map 95% reduce 32%
+2022-07-31 11:19:35,840 INFO mapreduce.Job:  map 97% reduce 32%
+2022-07-31 11:19:38,854 INFO mapreduce.Job:  map 98% reduce 32%
+2022-07-31 11:19:40,865 INFO mapreduce.Job:  map 98% reduce 33%
+2022-07-31 11:19:41,909 INFO mapreduce.Job:  map 99% reduce 33%
+2022-07-31 11:19:42,913 INFO mapreduce.Job:  map 100% reduce 33%
+2022-07-31 11:19:43,916 INFO mapreduce.Job:  map 100% reduce 100%
+2022-07-31 11:19:44,924 INFO mapreduce.Job: Job job_1659274676109_0004 completed successfully
+2022-07-31 11:19:45,049 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=4255649
+		FILE: Number of bytes written=175218585
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=78131265959
+		HDFS: Number of bytes written=849956
+		HDFS: Number of read operations=1809
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=6
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=598
+		Launched reduce tasks=3
+		Data-local map tasks=598
+		Total time spent by all maps in occupied slots (ms)=11822048
+		Total time spent by all reduces in occupied slots (ms)=1832412
+		Total time spent by all map tasks (ms)=5911024
+		Total time spent by all reduce tasks (ms)=458103
+		Total vcore-milliseconds taken by all map tasks=5911024
+		Total vcore-milliseconds taken by all reduce tasks=458103
+		Total megabyte-milliseconds taken by all map tasks=24211554304
+		Total megabyte-milliseconds taken by all reduce tasks=3752779776
+	Map-Reduce Framework
+		Map input records=635280850
+		Map output records=635280850
+		Map output bytes=20444619077
+		Map output materialized bytes=4266395
+		Input split bytes=65777
+		Combine input records=635280850
+		Combine output records=112849
+		Reduce input groups=22796
+		Reduce shuffle bytes=4266395
+		Reduce input records=112849
+		Reduce output records=22796
+		Spilled Records=225698
+		Shuffled Maps =1794
+		Failed Shuffles=0
+		Merged Map outputs=1794
+		GC time elapsed (ms)=239694
+		CPU time spent (ms)=6007720
+		Physical memory (bytes) snapshot=753102209024
+		Virtual memory (bytes) snapshot=3131401891840
+		Total committed heap usage (bytes)=1110779101184
+		Peak Map Physical memory (bytes)=1306071040
+		Peak Map Virtual memory (bytes)=5202280448
+		Peak Reduce Physical memory (bytes)=741793792
+		Peak Reduce Virtual memory (bytes)=8556748800
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=78131200182
+	File Output Format Counters 
+		Bytes Written=849956
+2022-07-31 11:19:45,995 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+copyToLocal: `./outdaily-per-usertype': File exists
+WARNING: nodemanager did not stop gracefully after 5 seconds: Trying to kill with kill -9

@@ -1,0 +1,1174 @@
+2022-07-31 13:34:12,161 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = node04.datos.cluster.uy/10.0.187.104
+STARTUP_MSG:   args = [-format]
+STARTUP_MSG:   version = 3.3.3
+STARTUP_MSG:   classpath = /clusteruy/home/andres.collares/hadoop-3.3.3/etc/hadoop:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jetty-util-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/accessors-smart-2.4.7.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jaxb-api-2.2.11.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/animal-sniffer-annotations-1.17.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerby-xdr-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/asm-5.0.4.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/javax.servlet-api-3.1.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/audience-annotations-0.5.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/metrics-core-3.2.4.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/avro-1.7.7.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jetty-util-ajax-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/checker-qual-2.5.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jetty-webapp-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-beanutils-1.9.4.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/netty-3.10.6.Final.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-cli-1.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jetty-xml-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-codec-1.15.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-collections-3.2.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jsch-0.1.55.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-compress-1.21.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jcip-annotations-1.0-1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-configuration2-2.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/json-smart-2.4.7.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-daemon-1.0.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/nimbus-jose-jwt-9.8.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-io-2.8.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jsp-api-2.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-lang3-3.12.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jsr305-3.0.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-logging-1.1.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jsr311-api-1.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-math3-3.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/paranamer-2.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-net-3.6.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/commons-text-1.4.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jul-to-slf4j-1.7.36.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/curator-client-4.2.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerb-admin-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/curator-framework-4.2.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerb-client-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/curator-recipes-4.2.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/re2j-1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/dnsjava-2.1.7.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerb-common-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/failureaccess-1.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/reload4j-1.2.18.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/gson-2.8.9.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/slf4j-api-1.7.36.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/guava-27.0-jre.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerb-core-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/hadoop-annotations-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerb-crypto-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/hadoop-auth-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jetty-io-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/hadoop-shaded-guava-1.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jetty-http-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/hadoop-shaded-protobuf_3_7-1.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerb-identity-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/httpclient-4.5.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/httpcore-4.4.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerb-server-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/j2objc-annotations-1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jetty-security-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jackson-annotations-2.13.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerb-simplekdc-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jackson-core-2.13.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerb-util-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jetty-server-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jackson-databind-2.13.2.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerby-asn1-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jetty-servlet-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerby-config-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jakarta.activation-api-1.2.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jersey-core-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/snappy-java-1.1.8.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jersey-json-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerby-pkix-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jersey-server-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/kerby-util-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jersey-servlet-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/stax2-api-4.2.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/jettison-1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/token-provider-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/woodstox-core-5.3.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/zookeeper-3.5.6.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/lib/zookeeper-jute-3.5.6.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/hadoop-common-3.3.3-tests.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/hadoop-common-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/hadoop-kms-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/hadoop-nfs-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/common/hadoop-registry-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jetty-util-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/accessors-smart-2.4.7.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jaxb-api-2.2.11.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/animal-sniffer-annotations-1.17.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/asm-5.0.4.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/javax.servlet-api-3.1.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/audience-annotations-0.5.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/netty-3.10.6.Final.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/avro-1.7.7.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jetty-util-ajax-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/checker-qual-2.5.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jetty-webapp-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-beanutils-1.9.4.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/netty-all-4.1.68.Final.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jetty-xml-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-codec-1.15.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jaxb-impl-2.2.3-1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-collections-3.2.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jsch-0.1.55.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-compress-1.21.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jcip-annotations-1.0-1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-configuration2-2.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/json-simple-1.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/nimbus-jose-jwt-9.8.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-io-2.8.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/json-smart-2.4.7.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-lang3-3.12.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jsr305-3.0.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jsr311-api-1.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-math3-3.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/okhttp-2.7.5.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-net-3.6.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/okio-1.6.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/commons-text-1.4.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerb-admin-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/curator-client-4.2.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerb-client-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/curator-framework-4.2.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerb-common-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/curator-recipes-4.2.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/paranamer-2.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/dnsjava-2.1.7.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerb-core-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/failureaccess-1.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/gson-2.8.9.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/re2j-1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/guava-27.0-jre.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerb-crypto-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/hadoop-annotations-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerb-identity-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/hadoop-auth-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jetty-io-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/hadoop-shaded-guava-1.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jetty-http-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/hadoop-shaded-protobuf_3_7-1.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerb-server-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/httpclient-4.5.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/reload4j-1.2.18.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/httpcore-4.4.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerb-simplekdc-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/j2objc-annotations-1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jetty-security-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jackson-annotations-2.13.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerb-util-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jackson-core-2.13.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerby-asn1-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jetty-server-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jackson-databind-2.13.2.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerby-config-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jackson-jaxrs-1.9.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jetty-servlet-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerby-pkix-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jackson-xc-1.9.13.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jakarta.activation-api-1.2.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jersey-core-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/snappy-java-1.1.8.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jersey-json-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerby-util-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jersey-server-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/kerby-xdr-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jersey-servlet-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/stax2-api-4.2.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/jettison-1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/token-provider-1.0.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/woodstox-core-5.3.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/zookeeper-3.5.6.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/lib/zookeeper-jute-3.5.6.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-3.3.3-tests.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-client-3.3.3-tests.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-client-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-httpfs-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-native-client-3.3.3-tests.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-native-client-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-nfs-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-rbf-3.3.3-tests.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/hdfs/hadoop-hdfs-rbf-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-app-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-common-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.3.3-tests.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-nativetask-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-client-uploader-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/HikariCP-java7-2.4.12.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/aopalliance-1.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/asm-analysis-9.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/asm-commons-9.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/asm-tree-9.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/bcpkix-jdk15on-1.60.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/bcprov-jdk15on-1.60.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/ehcache-3.3.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/fst-2.50.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/websocket-server-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/geronimo-jcache_1.0_spec-1.0-alpha-1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/guice-4.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/guice-servlet-4.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jackson-jaxrs-base-2.13.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/websocket-servlet-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jackson-jaxrs-json-provider-2.13.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jackson-module-jaxb-annotations-2.13.2.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jakarta.xml.bind-api-2.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/java-util-1.9.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/websocket-client-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/javax-websocket-client-impl-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/websocket-common-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/javax-websocket-server-impl-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/javax.inject-1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/javax.websocket-api-1.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/javax.websocket-client-api-1.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/javax.ws.rs-api-2.1.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jersey-client-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jersey-guice-1.19.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jetty-annotations-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jetty-client-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jetty-jndi-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jetty-plus-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jline-3.9.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/jna-5.2.0.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/json-io-2.5.1.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/metrics-core-3.2.4.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/mssql-jdbc-6.2.1.jre7.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/objenesis-2.6.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/scala-library-2.13.8.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/snakeyaml-1.26.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/swagger-annotations-1.5.4.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/lib/websocket-api-9.4.43.v20210629.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-api-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-applications-mawo-core-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-client-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-common-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-registry-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-server-common-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-server-nodemanager-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-server-router-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-server-tests-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-server-timeline-pluginstorage-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-server-web-proxy-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-services-api-3.3.3.jar:/clusteruy/home/andres.collares/hadoop-3.3.3/share/hadoop/yarn/hadoop-yarn-services-core-3.3.3.jar
+STARTUP_MSG:   build = https://github.com/apache/hadoop.git -r d37586cbda38c338d9fe481addda5a05fb516f71; compiled by 'stevel' on 2022-05-09T16:36Z
+STARTUP_MSG:   java = 1.8.0_191
+************************************************************/
+2022-07-31 13:34:12,173 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2022-07-31 13:34:12,286 INFO namenode.NameNode: createNameNode [-format]
+2022-07-31 13:34:12,424 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:34:12,744 INFO common.Util: Assuming 'file' scheme for path /scratch/andres.collares/nameNode in configuration.
+2022-07-31 13:34:12,745 INFO common.Util: Assuming 'file' scheme for path /scratch/andres.collares/nameNode in configuration.
+2022-07-31 13:34:12,749 INFO namenode.NameNode: Formatting using clusterid: CID-8851a80e-cd03-43ab-aaa9-4a710a5eb8b9
+2022-07-31 13:34:12,778 INFO namenode.FSEditLog: Edit logging is async:true
+2022-07-31 13:34:12,826 INFO namenode.FSNamesystem: KeyProvider: null
+2022-07-31 13:34:12,829 INFO namenode.FSNamesystem: fsLock is fair: true
+2022-07-31 13:34:12,831 INFO namenode.FSNamesystem: Detailed lock hold time metrics enabled: false
+2022-07-31 13:34:12,842 INFO namenode.FSNamesystem: fsOwner                = andres.collares (auth:SIMPLE)
+2022-07-31 13:34:12,842 INFO namenode.FSNamesystem: supergroup             = supergroup
+2022-07-31 13:34:12,842 INFO namenode.FSNamesystem: isPermissionEnabled    = true
+2022-07-31 13:34:12,842 INFO namenode.FSNamesystem: isStoragePolicyEnabled = true
+2022-07-31 13:34:12,842 INFO namenode.FSNamesystem: HA Enabled: false
+2022-07-31 13:34:12,882 INFO common.Util: dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2022-07-31 13:34:12,893 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2022-07-31 13:34:12,893 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2022-07-31 13:34:12,896 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2022-07-31 13:34:12,896 INFO blockmanagement.BlockManager: The block deletion will start around 2022 Jul 31 13:34:12
+2022-07-31 13:34:12,897 INFO util.GSet: Computing capacity for map BlocksMap
+2022-07-31 13:34:12,897 INFO util.GSet: VM type       = 64-bit
+2022-07-31 13:34:12,899 INFO util.GSet: 2.0% max memory 26.7 GB = 546.1 MB
+2022-07-31 13:34:12,899 INFO util.GSet: capacity      = 2^26 = 67108864 entries
+2022-07-31 13:34:12,977 INFO blockmanagement.BlockManager: Storage policy satisfier is disabled
+2022-07-31 13:34:12,978 INFO blockmanagement.BlockManager: dfs.block.access.token.enable = false
+2022-07-31 13:34:12,983 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.threshold-pct = 0.999
+2022-07-31 13:34:12,983 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.min.datanodes = 0
+2022-07-31 13:34:12,983 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.extension = 30000
+2022-07-31 13:34:12,983 INFO blockmanagement.BlockManager: defaultReplication         = 1
+2022-07-31 13:34:12,984 INFO blockmanagement.BlockManager: maxReplication             = 512
+2022-07-31 13:34:12,984 INFO blockmanagement.BlockManager: minReplication             = 1
+2022-07-31 13:34:12,984 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+2022-07-31 13:34:12,984 INFO blockmanagement.BlockManager: redundancyRecheckInterval  = 3000ms
+2022-07-31 13:34:12,984 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+2022-07-31 13:34:12,984 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2022-07-31 13:34:13,005 INFO namenode.FSDirectory: GLOBAL serial map: bits=29 maxEntries=536870911
+2022-07-31 13:34:13,006 INFO namenode.FSDirectory: USER serial map: bits=24 maxEntries=16777215
+2022-07-31 13:34:13,006 INFO namenode.FSDirectory: GROUP serial map: bits=24 maxEntries=16777215
+2022-07-31 13:34:13,006 INFO namenode.FSDirectory: XATTR serial map: bits=24 maxEntries=16777215
+2022-07-31 13:34:13,016 INFO util.GSet: Computing capacity for map INodeMap
+2022-07-31 13:34:13,016 INFO util.GSet: VM type       = 64-bit
+2022-07-31 13:34:13,017 INFO util.GSet: 1.0% max memory 26.7 GB = 273.0 MB
+2022-07-31 13:34:13,017 INFO util.GSet: capacity      = 2^25 = 33554432 entries
+2022-07-31 13:34:13,561 INFO namenode.FSDirectory: ACLs enabled? true
+2022-07-31 13:34:13,561 INFO namenode.FSDirectory: POSIX ACL inheritance enabled? true
+2022-07-31 13:34:13,561 INFO namenode.FSDirectory: XAttrs enabled? true
+2022-07-31 13:34:13,561 INFO namenode.NameNode: Caching file names occurring more than 10 times
+2022-07-31 13:34:13,569 INFO snapshot.SnapshotManager: Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2022-07-31 13:34:13,571 INFO snapshot.SnapshotManager: SkipList is disabled
+2022-07-31 13:34:13,575 INFO util.GSet: Computing capacity for map cachedBlocks
+2022-07-31 13:34:13,575 INFO util.GSet: VM type       = 64-bit
+2022-07-31 13:34:13,575 INFO util.GSet: 0.25% max memory 26.7 GB = 68.3 MB
+2022-07-31 13:34:13,575 INFO util.GSet: capacity      = 2^23 = 8388608 entries
+2022-07-31 13:34:13,584 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2022-07-31 13:34:13,584 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2022-07-31 13:34:13,584 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2022-07-31 13:34:13,587 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+2022-07-31 13:34:13,587 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2022-07-31 13:34:13,589 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+2022-07-31 13:34:13,589 INFO util.GSet: VM type       = 64-bit
+2022-07-31 13:34:13,589 INFO util.GSet: 0.029999999329447746% max memory 26.7 GB = 8.2 MB
+2022-07-31 13:34:13,589 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+2022-07-31 13:34:13,620 INFO namenode.FSImage: Allocated new BlockPoolId: BP-1818940502-10.0.187.104-1659285253606
+2022-07-31 13:34:13,640 INFO common.Storage: Storage directory /scratch/andres.collares/nameNode has been successfully formatted.
+2022-07-31 13:34:13,701 INFO namenode.FSImageFormatProtobuf: Saving image file /scratch/andres.collares/nameNode/current/fsimage.ckpt_0000000000000000000 using no compression
+2022-07-31 13:34:13,841 INFO namenode.FSImageFormatProtobuf: Image file /scratch/andres.collares/nameNode/current/fsimage.ckpt_0000000000000000000 of size 410 bytes saved in 0 seconds .
+2022-07-31 13:34:13,867 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+2022-07-31 13:34:13,976 INFO namenode.FSNamesystem: Stopping services started for active state
+2022-07-31 13:34:13,976 INFO namenode.FSNamesystem: Stopping services started for standby state
+2022-07-31 13:34:13,981 INFO namenode.FSImage: FSImageSaver clean checkpoint: txid=0 when meet shutdown.
+2022-07-31 13:34:13,982 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at node04.datos.cluster.uy/10.0.187.104
+************************************************************/
+2022-07-31 13:34:29,112 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:34:30,825 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:34:33,301 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:35:46,993 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:35:47,659 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-07-31 13:35:50,495 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/andres.collares/.staging/job_1659285263204_0001
+2022-07-31 13:35:50,820 INFO input.FileInputFormat: Total input files to process : 3
+2022-07-31 13:35:50,889 INFO mapreduce.JobSubmitter: number of splits:54
+2022-07-31 13:35:51,030 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1659285263204_0001
+2022-07-31 13:35:51,030 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-07-31 13:35:51,178 INFO conf.Configuration: resource-types.xml not found
+2022-07-31 13:35:51,178 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-07-31 13:35:51,581 INFO impl.YarnClientImpl: Submitted application application_1659285263204_0001
+2022-07-31 13:35:51,621 INFO mapreduce.Job: The url to track the job: http://node04.datos.cluster.uy:8088/proxy/application_1659285263204_0001/
+2022-07-31 13:35:51,622 INFO mapreduce.Job: Running job: job_1659285263204_0001
+2022-07-31 13:35:59,757 INFO mapreduce.Job: Job job_1659285263204_0001 running in uber mode : false
+2022-07-31 13:35:59,759 INFO mapreduce.Job:  map 0% reduce 0%
+2022-07-31 13:36:13,900 INFO mapreduce.Job:  map 4% reduce 0%
+2022-07-31 13:36:14,907 INFO mapreduce.Job:  map 37% reduce 0%
+2022-07-31 13:36:15,916 INFO mapreduce.Job:  map 44% reduce 0%
+2022-07-31 13:36:21,953 INFO mapreduce.Job:  map 48% reduce 0%
+2022-07-31 13:36:24,967 INFO mapreduce.Job:  map 52% reduce 0%
+2022-07-31 13:36:25,971 INFO mapreduce.Job:  map 61% reduce 0%
+2022-07-31 13:36:26,977 INFO mapreduce.Job:  map 80% reduce 0%
+2022-07-31 13:36:27,982 INFO mapreduce.Job:  map 89% reduce 0%
+2022-07-31 13:36:29,990 INFO mapreduce.Job:  map 91% reduce 0%
+2022-07-31 13:36:32,001 INFO mapreduce.Job:  map 93% reduce 0%
+2022-07-31 13:36:33,007 INFO mapreduce.Job:  map 100% reduce 0%
+2022-07-31 13:36:34,013 INFO mapreduce.Job:  map 100% reduce 100%
+2022-07-31 13:36:36,037 INFO mapreduce.Job: Job job_1659285263204_0001 completed successfully
+2022-07-31 13:36:36,155 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=1282477
+		FILE: Number of bytes written=17817531
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=7027498158
+		HDFS: Number of bytes written=160993
+		HDFS: Number of read operations=167
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=54
+		Launched reduce tasks=1
+		Data-local map tasks=54
+		Total time spent by all maps in occupied slots (ms)=1173264
+		Total time spent by all reduces in occupied slots (ms)=48296
+		Total time spent by all map tasks (ms)=586632
+		Total time spent by all reduce tasks (ms)=12074
+		Total vcore-milliseconds taken by all map tasks=586632
+		Total vcore-milliseconds taken by all reduce tasks=12074
+		Total megabyte-milliseconds taken by all map tasks=2402844672
+		Total megabyte-milliseconds taken by all reduce tasks=98910208
+	Map-Reduce Framework
+		Map input records=57251753
+		Map output records=57251753
+		Map output bytes=1083501473
+		Map output materialized bytes=1282795
+		Input split bytes=5937
+		Combine input records=57251753
+		Combine output records=61136
+		Reduce input groups=8053
+		Reduce shuffle bytes=1282795
+		Reduce input records=61136
+		Reduce output records=8053
+		Spilled Records=122272
+		Shuffled Maps =54
+		Failed Shuffles=0
+		Merged Map outputs=54
+		GC time elapsed (ms)=19431
+		CPU time spent (ms)=402300
+		Physical memory (bytes) snapshot=67507703808
+		Virtual memory (bytes) snapshot=288943779840
+		Total committed heap usage (bytes)=99932438528
+		Peak Map Physical memory (bytes)=1278357504
+		Peak Map Virtual memory (bytes)=5197295616
+		Peak Reduce Physical memory (bytes)=471556096
+		Peak Reduce Virtual memory (bytes)=8544854016
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=7027492221
+	File Output Format Counters 
+		Bytes Written=160993
+2022-07-31 13:36:37,090 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:36:39,228 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:36:39,876 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-07-31 13:36:40,270 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/andres.collares/.staging/job_1659285263204_0002
+2022-07-31 13:36:40,523 INFO input.FileInputFormat: Total input files to process : 3
+2022-07-31 13:36:40,982 INFO mapreduce.JobSubmitter: number of splits:54
+2022-07-31 13:36:41,094 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1659285263204_0002
+2022-07-31 13:36:41,094 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-07-31 13:36:41,252 INFO conf.Configuration: resource-types.xml not found
+2022-07-31 13:36:41,253 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-07-31 13:36:41,308 INFO impl.YarnClientImpl: Submitted application application_1659285263204_0002
+2022-07-31 13:36:41,337 INFO mapreduce.Job: The url to track the job: http://node04.datos.cluster.uy:8088/proxy/application_1659285263204_0002/
+2022-07-31 13:36:41,337 INFO mapreduce.Job: Running job: job_1659285263204_0002
+2022-07-31 13:36:48,454 INFO mapreduce.Job: Job job_1659285263204_0002 running in uber mode : false
+2022-07-31 13:36:48,456 INFO mapreduce.Job:  map 0% reduce 0%
+2022-07-31 13:37:00,584 INFO mapreduce.Job:  map 2% reduce 0%
+2022-07-31 13:37:01,589 INFO mapreduce.Job:  map 17% reduce 0%
+2022-07-31 13:37:02,606 INFO mapreduce.Job:  map 44% reduce 0%
+2022-07-31 13:37:10,667 INFO mapreduce.Job:  map 50% reduce 0%
+2022-07-31 13:37:11,671 INFO mapreduce.Job:  map 54% reduce 0%
+2022-07-31 13:37:12,675 INFO mapreduce.Job:  map 63% reduce 0%
+2022-07-31 13:37:13,682 INFO mapreduce.Job:  map 87% reduce 0%
+2022-07-31 13:37:14,688 INFO mapreduce.Job:  map 89% reduce 0%
+2022-07-31 13:37:19,713 INFO mapreduce.Job:  map 94% reduce 0%
+2022-07-31 13:37:21,723 INFO mapreduce.Job:  map 98% reduce 0%
+2022-07-31 13:37:22,728 INFO mapreduce.Job:  map 100% reduce 0%
+2022-07-31 13:37:23,735 INFO mapreduce.Job:  map 100% reduce 100%
+2022-07-31 13:37:24,753 INFO mapreduce.Job: Job job_1659285263204_0002 completed successfully
+2022-07-31 13:37:24,863 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=1282483
+		FILE: Number of bytes written=18096416
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=7027498158
+		HDFS: Number of bytes written=160993
+		HDFS: Number of read operations=172
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=4
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=54
+		Launched reduce tasks=2
+		Data-local map tasks=54
+		Total time spent by all maps in occupied slots (ms)=1084154
+		Total time spent by all reduces in occupied slots (ms)=96144
+		Total time spent by all map tasks (ms)=542077
+		Total time spent by all reduce tasks (ms)=24036
+		Total vcore-milliseconds taken by all map tasks=542077
+		Total vcore-milliseconds taken by all reduce tasks=24036
+		Total megabyte-milliseconds taken by all map tasks=2220347392
+		Total megabyte-milliseconds taken by all reduce tasks=196902912
+	Map-Reduce Framework
+		Map input records=57251753
+		Map output records=57251753
+		Map output bytes=1083501473
+		Map output materialized bytes=1283119
+		Input split bytes=5937
+		Combine input records=57251753
+		Combine output records=61136
+		Reduce input groups=8053
+		Reduce shuffle bytes=1283119
+		Reduce input records=61136
+		Reduce output records=8053
+		Spilled Records=122272
+		Shuffled Maps =108
+		Failed Shuffles=0
+		Merged Map outputs=108
+		GC time elapsed (ms)=18840
+		CPU time spent (ms)=413970
+		Physical memory (bytes) snapshot=67627859968
+		Virtual memory (bytes) snapshot=297496330240
+		Total committed heap usage (bytes)=100636557312
+		Peak Map Physical memory (bytes)=1272614912
+		Peak Map Virtual memory (bytes)=5201719296
+		Peak Reduce Physical memory (bytes)=453603328
+		Peak Reduce Virtual memory (bytes)=8540844032
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=7027492221
+	File Output Format Counters 
+		Bytes Written=160993
+2022-07-31 13:37:25,832 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:37:28,122 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:37:28,780 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-07-31 13:37:29,164 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/andres.collares/.staging/job_1659285263204_0003
+2022-07-31 13:37:29,414 INFO input.FileInputFormat: Total input files to process : 3
+2022-07-31 13:37:29,872 INFO mapreduce.JobSubmitter: number of splits:54
+2022-07-31 13:37:29,974 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1659285263204_0003
+2022-07-31 13:37:29,974 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-07-31 13:37:30,123 INFO conf.Configuration: resource-types.xml not found
+2022-07-31 13:37:30,123 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-07-31 13:37:30,183 INFO impl.YarnClientImpl: Submitted application application_1659285263204_0003
+2022-07-31 13:37:30,212 INFO mapreduce.Job: The url to track the job: http://node04.datos.cluster.uy:8088/proxy/application_1659285263204_0003/
+2022-07-31 13:37:30,212 INFO mapreduce.Job: Running job: job_1659285263204_0003
+2022-07-31 13:37:37,342 INFO mapreduce.Job: Job job_1659285263204_0003 running in uber mode : false
+2022-07-31 13:37:37,345 INFO mapreduce.Job:  map 0% reduce 0%
+2022-07-31 13:37:49,485 INFO mapreduce.Job:  map 7% reduce 0%
+2022-07-31 13:37:50,491 INFO mapreduce.Job:  map 39% reduce 0%
+2022-07-31 13:37:51,497 INFO mapreduce.Job:  map 44% reduce 0%
+2022-07-31 13:37:58,540 INFO mapreduce.Job:  map 48% reduce 0%
+2022-07-31 13:37:59,544 INFO mapreduce.Job:  map 57% reduce 0%
+2022-07-31 13:38:00,550 INFO mapreduce.Job:  map 85% reduce 0%
+2022-07-31 13:38:04,570 INFO mapreduce.Job:  map 87% reduce 0%
+2022-07-31 13:38:06,582 INFO mapreduce.Job:  map 89% reduce 0%
+2022-07-31 13:38:07,588 INFO mapreduce.Job:  map 100% reduce 0%
+2022-07-31 13:38:08,595 INFO mapreduce.Job:  map 100% reduce 100%
+2022-07-31 13:38:10,618 INFO mapreduce.Job: Job job_1659285263204_0003 completed successfully
+2022-07-31 13:38:10,740 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=1282489
+		FILE: Number of bytes written=18375301
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=7027498158
+		HDFS: Number of bytes written=160993
+		HDFS: Number of read operations=177
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=6
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=54
+		Launched reduce tasks=3
+		Data-local map tasks=54
+		Total time spent by all maps in occupied slots (ms)=1029384
+		Total time spent by all reduces in occupied slots (ms)=134956
+		Total time spent by all map tasks (ms)=514692
+		Total time spent by all reduce tasks (ms)=33739
+		Total vcore-milliseconds taken by all map tasks=514692
+		Total vcore-milliseconds taken by all reduce tasks=33739
+		Total megabyte-milliseconds taken by all map tasks=2108178432
+		Total megabyte-milliseconds taken by all reduce tasks=276389888
+	Map-Reduce Framework
+		Map input records=57251753
+		Map output records=57251753
+		Map output bytes=1083501473
+		Map output materialized bytes=1283443
+		Input split bytes=5937
+		Combine input records=57251753
+		Combine output records=61136
+		Reduce input groups=8053
+		Reduce shuffle bytes=1283443
+		Reduce input records=61136
+		Reduce output records=8053
+		Spilled Records=122272
+		Shuffled Maps =162
+		Failed Shuffles=0
+		Merged Map outputs=162
+		GC time elapsed (ms)=20431
+		CPU time spent (ms)=431360
+		Physical memory (bytes) snapshot=68343042048
+		Virtual memory (bytes) snapshot=306061991936
+		Total committed heap usage (bytes)=103089700864
+		Peak Map Physical memory (bytes)=1285074944
+		Peak Map Virtual memory (bytes)=5200089088
+		Peak Reduce Physical memory (bytes)=442040320
+		Peak Reduce Virtual memory (bytes)=8539070464
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=7027492221
+	File Output Format Counters 
+		Bytes Written=160993
+2022-07-31 13:38:11,678 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:38:13,748 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:38:14,405 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-07-31 13:38:14,789 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/andres.collares/.staging/job_1659285263204_0004
+2022-07-31 13:38:15,047 INFO input.FileInputFormat: Total input files to process : 3
+2022-07-31 13:38:15,504 INFO mapreduce.JobSubmitter: number of splits:54
+2022-07-31 13:38:16,009 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1659285263204_0004
+2022-07-31 13:38:16,010 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-07-31 13:38:16,163 INFO conf.Configuration: resource-types.xml not found
+2022-07-31 13:38:16,163 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-07-31 13:38:16,219 INFO impl.YarnClientImpl: Submitted application application_1659285263204_0004
+2022-07-31 13:38:16,248 INFO mapreduce.Job: The url to track the job: http://node04.datos.cluster.uy:8088/proxy/application_1659285263204_0004/
+2022-07-31 13:38:16,248 INFO mapreduce.Job: Running job: job_1659285263204_0004
+2022-07-31 13:38:23,363 INFO mapreduce.Job: Job job_1659285263204_0004 running in uber mode : false
+2022-07-31 13:38:23,366 INFO mapreduce.Job:  map 0% reduce 0%
+2022-07-31 13:38:35,513 INFO mapreduce.Job:  map 11% reduce 0%
+2022-07-31 13:38:36,521 INFO mapreduce.Job:  map 44% reduce 0%
+2022-07-31 13:38:45,644 INFO mapreduce.Job:  map 50% reduce 0%
+2022-07-31 13:38:46,651 INFO mapreduce.Job:  map 57% reduce 0%
+2022-07-31 13:38:47,657 INFO mapreduce.Job:  map 72% reduce 0%
+2022-07-31 13:38:48,664 INFO mapreduce.Job:  map 89% reduce 0%
+2022-07-31 13:38:52,684 INFO mapreduce.Job:  map 91% reduce 0%
+2022-07-31 13:38:54,694 INFO mapreduce.Job:  map 93% reduce 0%
+2022-07-31 13:38:55,700 INFO mapreduce.Job:  map 100% reduce 0%
+2022-07-31 13:38:56,707 INFO mapreduce.Job:  map 100% reduce 86%
+2022-07-31 13:38:57,714 INFO mapreduce.Job:  map 100% reduce 100%
+2022-07-31 13:38:58,731 INFO mapreduce.Job: Job job_1659285263204_0004 completed successfully
+2022-07-31 13:38:58,847 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=1282513
+		FILE: Number of bytes written=19490841
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=7027498158
+		HDFS: Number of bytes written=160993
+		HDFS: Number of read operations=197
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=14
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=54
+		Launched reduce tasks=7
+		Data-local map tasks=54
+		Total time spent by all maps in occupied slots (ms)=1087500
+		Total time spent by all reduces in occupied slots (ms)=252620
+		Total time spent by all map tasks (ms)=543750
+		Total time spent by all reduce tasks (ms)=63155
+		Total vcore-milliseconds taken by all map tasks=543750
+		Total vcore-milliseconds taken by all reduce tasks=63155
+		Total megabyte-milliseconds taken by all map tasks=2227200000
+		Total megabyte-milliseconds taken by all reduce tasks=517365760
+	Map-Reduce Framework
+		Map input records=57251753
+		Map output records=57251753
+		Map output bytes=1083501473
+		Map output materialized bytes=1284739
+		Input split bytes=5937
+		Combine input records=57251753
+		Combine output records=61136
+		Reduce input groups=8053
+		Reduce shuffle bytes=1284739
+		Reduce input records=61136
+		Reduce output records=8053
+		Spilled Records=122272
+		Shuffled Maps =378
+		Failed Shuffles=0
+		Merged Map outputs=378
+		GC time elapsed (ms)=21592
+		CPU time spent (ms)=437110
+		Physical memory (bytes) snapshot=70567981056
+		Virtual memory (bytes) snapshot=340197265408
+		Total committed heap usage (bytes)=109185597440
+		Peak Map Physical memory (bytes)=1277009920
+		Peak Map Virtual memory (bytes)=5201453056
+		Peak Reduce Physical memory (bytes)=448135168
+		Peak Reduce Virtual memory (bytes)=8550797312
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=7027492221
+	File Output Format Counters 
+		Bytes Written=160993
+2022-07-31 13:38:59,774 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:39:01,804 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:39:02,432 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-07-31 13:39:02,822 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/andres.collares/.staging/job_1659285263204_0005
+2022-07-31 13:39:03,068 INFO input.FileInputFormat: Total input files to process : 3
+2022-07-31 13:39:03,927 INFO mapreduce.JobSubmitter: number of splits:54
+2022-07-31 13:39:04,434 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1659285263204_0005
+2022-07-31 13:39:04,435 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-07-31 13:39:04,592 INFO conf.Configuration: resource-types.xml not found
+2022-07-31 13:39:04,593 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-07-31 13:39:04,648 INFO impl.YarnClientImpl: Submitted application application_1659285263204_0005
+2022-07-31 13:39:04,675 INFO mapreduce.Job: The url to track the job: http://node04.datos.cluster.uy:8088/proxy/application_1659285263204_0005/
+2022-07-31 13:39:04,675 INFO mapreduce.Job: Running job: job_1659285263204_0005
+2022-07-31 13:39:11,801 INFO mapreduce.Job: Job job_1659285263204_0005 running in uber mode : false
+2022-07-31 13:39:11,804 INFO mapreduce.Job:  map 0% reduce 0%
+2022-07-31 13:39:24,958 INFO mapreduce.Job:  map 7% reduce 0%
+2022-07-31 13:39:25,965 INFO mapreduce.Job:  map 43% reduce 0%
+2022-07-31 13:39:26,972 INFO mapreduce.Job:  map 44% reduce 0%
+2022-07-31 13:39:35,042 INFO mapreduce.Job:  map 50% reduce 0%
+2022-07-31 13:39:36,047 INFO mapreduce.Job:  map 59% reduce 0%
+2022-07-31 13:39:37,059 INFO mapreduce.Job:  map 72% reduce 0%
+2022-07-31 13:39:38,065 INFO mapreduce.Job:  map 89% reduce 0%
+2022-07-31 13:39:43,086 INFO mapreduce.Job:  map 93% reduce 0%
+2022-07-31 13:39:45,096 INFO mapreduce.Job:  map 100% reduce 7%
+2022-07-31 13:39:46,102 INFO mapreduce.Job:  map 100% reduce 60%
+2022-07-31 13:39:48,111 INFO mapreduce.Job:  map 100% reduce 73%
+2022-07-31 13:39:50,121 INFO mapreduce.Job:  map 100% reduce 100%
+2022-07-31 13:39:52,145 INFO mapreduce.Job: Job job_1659285263204_0005 completed successfully
+2022-07-31 13:39:52,271 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=1282561
+		FILE: Number of bytes written=21721995
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=7027498158
+		HDFS: Number of bytes written=160993
+		HDFS: Number of read operations=237
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=30
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=54
+		Launched reduce tasks=15
+		Data-local map tasks=54
+		Total time spent by all maps in occupied slots (ms)=1123940
+		Total time spent by all reduces in occupied slots (ms)=367048
+		Total time spent by all map tasks (ms)=561970
+		Total time spent by all reduce tasks (ms)=91762
+		Total vcore-milliseconds taken by all map tasks=561970
+		Total vcore-milliseconds taken by all reduce tasks=91762
+		Total megabyte-milliseconds taken by all map tasks=2301829120
+		Total megabyte-milliseconds taken by all reduce tasks=751714304
+	Map-Reduce Framework
+		Map input records=57251753
+		Map output records=57251753
+		Map output bytes=1083501473
+		Map output materialized bytes=1287331
+		Input split bytes=5937
+		Combine input records=57251753
+		Combine output records=61136
+		Reduce input groups=8053
+		Reduce shuffle bytes=1287331
+		Reduce input records=61136
+		Reduce output records=8053
+		Spilled Records=122272
+		Shuffled Maps =810
+		Failed Shuffles=0
+		Merged Map outputs=810
+		GC time elapsed (ms)=20462
+		CPU time spent (ms)=442400
+		Physical memory (bytes) snapshot=73651630080
+		Virtual memory (bytes) snapshot=408447229952
+		Total committed heap usage (bytes)=120869879808
+		Peak Map Physical memory (bytes)=1274859520
+		Peak Map Virtual memory (bytes)=5199048704
+		Peak Reduce Physical memory (bytes)=433823744
+		Peak Reduce Virtual memory (bytes)=8540250112
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=7027492221
+	File Output Format Counters 
+		Bytes Written=160993
+2022-07-31 13:39:53,265 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:39:55,314 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:39:55,945 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-07-31 13:39:56,332 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/andres.collares/.staging/job_1659285263204_0006
+2022-07-31 13:39:56,569 INFO input.FileInputFormat: Total input files to process : 3
+2022-07-31 13:39:57,024 INFO mapreduce.JobSubmitter: number of splits:54
+2022-07-31 13:39:57,136 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1659285263204_0006
+2022-07-31 13:39:57,136 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-07-31 13:39:57,287 INFO conf.Configuration: resource-types.xml not found
+2022-07-31 13:39:57,288 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-07-31 13:39:57,342 INFO impl.YarnClientImpl: Submitted application application_1659285263204_0006
+2022-07-31 13:39:57,371 INFO mapreduce.Job: The url to track the job: http://node04.datos.cluster.uy:8088/proxy/application_1659285263204_0006/
+2022-07-31 13:39:57,372 INFO mapreduce.Job: Running job: job_1659285263204_0006
+2022-07-31 13:40:04,485 INFO mapreduce.Job: Job job_1659285263204_0006 running in uber mode : false
+2022-07-31 13:40:04,488 INFO mapreduce.Job:  map 0% reduce 0%
+2022-07-31 13:40:15,616 INFO mapreduce.Job:  map 4% reduce 0%
+2022-07-31 13:40:16,621 INFO mapreduce.Job:  map 7% reduce 0%
+2022-07-31 13:40:17,628 INFO mapreduce.Job:  map 22% reduce 0%
+2022-07-31 13:40:18,633 INFO mapreduce.Job:  map 43% reduce 0%
+2022-07-31 13:40:19,639 INFO mapreduce.Job:  map 44% reduce 0%
+2022-07-31 13:40:24,671 INFO mapreduce.Job:  map 48% reduce 0%
+2022-07-31 13:40:25,681 INFO mapreduce.Job:  map 50% reduce 0%
+2022-07-31 13:40:26,688 INFO mapreduce.Job:  map 52% reduce 0%
+2022-07-31 13:40:27,692 INFO mapreduce.Job:  map 63% reduce 0%
+2022-07-31 13:40:28,696 INFO mapreduce.Job:  map 78% reduce 0%
+2022-07-31 13:40:29,702 INFO mapreduce.Job:  map 89% reduce 0%
+2022-07-31 13:40:33,718 INFO mapreduce.Job:  map 91% reduce 0%
+2022-07-31 13:40:36,733 INFO mapreduce.Job:  map 100% reduce 4%
+2022-07-31 13:40:37,739 INFO mapreduce.Job:  map 100% reduce 32%
+2022-07-31 13:40:39,749 INFO mapreduce.Job:  map 100% reduce 40%
+2022-07-31 13:40:40,752 INFO mapreduce.Job:  map 100% reduce 56%
+2022-07-31 13:40:41,757 INFO mapreduce.Job:  map 100% reduce 72%
+2022-07-31 13:40:42,762 INFO mapreduce.Job:  map 100% reduce 84%
+2022-07-31 13:40:43,772 INFO mapreduce.Job:  map 100% reduce 88%
+2022-07-31 13:40:44,779 INFO mapreduce.Job:  map 100% reduce 100%
+2022-07-31 13:40:46,800 INFO mapreduce.Job: Job job_1659285263204_0006 completed successfully
+2022-07-31 13:40:46,923 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=1282621
+		FILE: Number of bytes written=24510865
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=7027498158
+		HDFS: Number of bytes written=160993
+		HDFS: Number of read operations=287
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=50
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=54
+		Launched reduce tasks=25
+		Data-local map tasks=54
+		Total time spent by all maps in occupied slots (ms)=1066838
+		Total time spent by all reduces in occupied slots (ms)=507068
+		Total time spent by all map tasks (ms)=533419
+		Total time spent by all reduce tasks (ms)=126767
+		Total vcore-milliseconds taken by all map tasks=533419
+		Total vcore-milliseconds taken by all reduce tasks=126767
+		Total megabyte-milliseconds taken by all map tasks=2184884224
+		Total megabyte-milliseconds taken by all reduce tasks=1038475264
+	Map-Reduce Framework
+		Map input records=57251753
+		Map output records=57251753
+		Map output bytes=1083501473
+		Map output materialized bytes=1290571
+		Input split bytes=5937
+		Combine input records=57251753
+		Combine output records=61136
+		Reduce input groups=8053
+		Reduce shuffle bytes=1290571
+		Reduce input records=61136
+		Reduce output records=8053
+		Spilled Records=122272
+		Shuffled Maps =1350
+		Failed Shuffles=0
+		Merged Map outputs=1350
+		GC time elapsed (ms)=19078
+		CPU time spent (ms)=444970
+		Physical memory (bytes) snapshot=77503242240
+		Virtual memory (bytes) snapshot=493758492672
+		Total committed heap usage (bytes)=135789019136
+		Peak Map Physical memory (bytes)=1277378560
+		Peak Map Virtual memory (bytes)=5197758464
+		Peak Reduce Physical memory (bytes)=426901504
+		Peak Reduce Virtual memory (bytes)=8534618112
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=7027492221
+	File Output Format Counters 
+		Bytes Written=160993
+2022-07-31 13:40:47,857 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:40:49,854 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:40:50,523 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-07-31 13:40:50,906 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/andres.collares/.staging/job_1659285263204_0007
+2022-07-31 13:40:51,154 INFO input.FileInputFormat: Total input files to process : 3
+2022-07-31 13:40:51,204 INFO mapreduce.JobSubmitter: number of splits:54
+2022-07-31 13:40:51,708 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1659285263204_0007
+2022-07-31 13:40:51,708 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-07-31 13:40:51,873 INFO conf.Configuration: resource-types.xml not found
+2022-07-31 13:40:51,874 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-07-31 13:40:51,934 INFO impl.YarnClientImpl: Submitted application application_1659285263204_0007
+2022-07-31 13:40:51,961 INFO mapreduce.Job: The url to track the job: http://node04.datos.cluster.uy:8088/proxy/application_1659285263204_0007/
+2022-07-31 13:40:51,962 INFO mapreduce.Job: Running job: job_1659285263204_0007
+2022-07-31 13:40:58,064 INFO mapreduce.Job: Job job_1659285263204_0007 running in uber mode : false
+2022-07-31 13:40:58,067 INFO mapreduce.Job:  map 0% reduce 0%
+2022-07-31 13:41:09,231 INFO mapreduce.Job:  map 2% reduce 0%
+2022-07-31 13:41:10,236 INFO mapreduce.Job:  map 7% reduce 0%
+2022-07-31 13:41:11,242 INFO mapreduce.Job:  map 39% reduce 0%
+2022-07-31 13:41:12,251 INFO mapreduce.Job:  map 44% reduce 0%
+2022-07-31 13:41:15,266 INFO mapreduce.Job:  map 46% reduce 0%
+2022-07-31 13:41:18,282 INFO mapreduce.Job:  map 48% reduce 0%
+2022-07-31 13:41:20,293 INFO mapreduce.Job:  map 54% reduce 0%
+2022-07-31 13:41:21,297 INFO mapreduce.Job:  map 63% reduce 0%
+2022-07-31 13:41:22,302 INFO mapreduce.Job:  map 74% reduce 0%
+2022-07-31 13:41:23,308 INFO mapreduce.Job:  map 89% reduce 0%
+2022-07-31 13:41:27,325 INFO mapreduce.Job:  map 91% reduce 0%
+2022-07-31 13:41:29,336 INFO mapreduce.Job:  map 93% reduce 0%
+2022-07-31 13:41:30,343 INFO mapreduce.Job:  map 100% reduce 0%
+2022-07-31 13:41:31,348 INFO mapreduce.Job:  map 100% reduce 17%
+2022-07-31 13:41:32,355 INFO mapreduce.Job:  map 100% reduce 26%
+2022-07-31 13:41:33,360 INFO mapreduce.Job:  map 100% reduce 29%
+2022-07-31 13:41:34,385 INFO mapreduce.Job:  map 100% reduce 31%
+2022-07-31 13:41:37,398 INFO mapreduce.Job:  map 100% reduce 57%
+2022-07-31 13:41:38,403 INFO mapreduce.Job:  map 100% reduce 66%
+2022-07-31 13:41:41,414 INFO mapreduce.Job:  map 100% reduce 80%
+2022-07-31 13:41:42,419 INFO mapreduce.Job:  map 100% reduce 91%
+2022-07-31 13:41:43,423 INFO mapreduce.Job:  map 100% reduce 94%
+2022-07-31 13:41:44,428 INFO mapreduce.Job:  map 100% reduce 97%
+2022-07-31 13:41:45,434 INFO mapreduce.Job:  map 100% reduce 100%
+2022-07-31 13:41:46,449 INFO mapreduce.Job: Job job_1659285263204_0007 completed successfully
+2022-07-31 13:41:46,575 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=1282681
+		FILE: Number of bytes written=27299735
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=7027498158
+		HDFS: Number of bytes written=160993
+		HDFS: Number of read operations=337
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=70
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=54
+		Launched reduce tasks=35
+		Data-local map tasks=54
+		Total time spent by all maps in occupied slots (ms)=1031372
+		Total time spent by all reduces in occupied slots (ms)=724164
+		Total time spent by all map tasks (ms)=515686
+		Total time spent by all reduce tasks (ms)=181041
+		Total vcore-milliseconds taken by all map tasks=515686
+		Total vcore-milliseconds taken by all reduce tasks=181041
+		Total megabyte-milliseconds taken by all map tasks=2112249856
+		Total megabyte-milliseconds taken by all reduce tasks=1483087872
+	Map-Reduce Framework
+		Map input records=57251753
+		Map output records=57251753
+		Map output bytes=1083501473
+		Map output materialized bytes=1293811
+		Input split bytes=5937
+		Combine input records=57251753
+		Combine output records=61136
+		Reduce input groups=8053
+		Reduce shuffle bytes=1293811
+		Reduce input records=61136
+		Reduce output records=8053
+		Spilled Records=122272
+		Shuffled Maps =1890
+		Failed Shuffles=0
+		Merged Map outputs=1890
+		GC time elapsed (ms)=19238
+		CPU time spent (ms)=457370
+		Physical memory (bytes) snapshot=81677504512
+		Virtual memory (bytes) snapshot=579082293248
+		Total committed heap usage (bytes)=151041605632
+		Peak Map Physical memory (bytes)=1276264448
+		Peak Map Virtual memory (bytes)=5198155776
+		Peak Reduce Physical memory (bytes)=430206976
+		Peak Reduce Virtual memory (bytes)=8536301568
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=7027492221
+	File Output Format Counters 
+		Bytes Written=160993
+2022-07-31 13:41:47,495 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:41:49,600 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:41:50,226 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-07-31 13:41:50,607 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/andres.collares/.staging/job_1659285263204_0008
+2022-07-31 13:41:50,846 INFO input.FileInputFormat: Total input files to process : 3
+2022-07-31 13:41:51,301 INFO mapreduce.JobSubmitter: number of splits:54
+2022-07-31 13:41:51,404 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1659285263204_0008
+2022-07-31 13:41:51,404 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-07-31 13:41:51,547 INFO conf.Configuration: resource-types.xml not found
+2022-07-31 13:41:51,547 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-07-31 13:41:51,607 INFO impl.YarnClientImpl: Submitted application application_1659285263204_0008
+2022-07-31 13:41:51,644 INFO mapreduce.Job: The url to track the job: http://node04.datos.cluster.uy:8088/proxy/application_1659285263204_0008/
+2022-07-31 13:41:51,645 INFO mapreduce.Job: Running job: job_1659285263204_0008
+2022-07-31 13:41:58,762 INFO mapreduce.Job: Job job_1659285263204_0008 running in uber mode : false
+2022-07-31 13:41:58,765 INFO mapreduce.Job:  map 0% reduce 0%
+2022-07-31 13:42:10,909 INFO mapreduce.Job:  map 11% reduce 0%
+2022-07-31 13:42:11,915 INFO mapreduce.Job:  map 44% reduce 0%
+2022-07-31 13:42:17,963 INFO mapreduce.Job:  map 46% reduce 0%
+2022-07-31 13:42:19,974 INFO mapreduce.Job:  map 50% reduce 0%
+2022-07-31 13:42:20,982 INFO mapreduce.Job:  map 57% reduce 0%
+2022-07-31 13:42:21,997 INFO mapreduce.Job:  map 65% reduce 0%
+2022-07-31 13:42:23,003 INFO mapreduce.Job:  map 89% reduce 0%
+2022-07-31 13:42:27,020 INFO mapreduce.Job:  map 91% reduce 0%
+2022-07-31 13:42:29,032 INFO mapreduce.Job:  map 93% reduce 0%
+2022-07-31 13:42:30,039 INFO mapreduce.Job:  map 100% reduce 0%
+2022-07-31 13:42:31,046 INFO mapreduce.Job:  map 100% reduce 13%
+2022-07-31 13:42:32,053 INFO mapreduce.Job:  map 100% reduce 19%
+2022-07-31 13:42:33,057 INFO mapreduce.Job:  map 100% reduce 21%
+2022-07-31 13:42:34,062 INFO mapreduce.Job:  map 100% reduce 26%
+2022-07-31 13:42:35,066 INFO mapreduce.Job:  map 100% reduce 38%
+2022-07-31 13:42:36,072 INFO mapreduce.Job:  map 100% reduce 45%
+2022-07-31 13:42:37,075 INFO mapreduce.Job:  map 100% reduce 47%
+2022-07-31 13:42:38,079 INFO mapreduce.Job:  map 100% reduce 51%
+2022-07-31 13:42:39,083 INFO mapreduce.Job:  map 100% reduce 62%
+2022-07-31 13:42:40,089 INFO mapreduce.Job:  map 100% reduce 66%
+2022-07-31 13:42:41,094 INFO mapreduce.Job:  map 100% reduce 70%
+2022-07-31 13:42:42,097 INFO mapreduce.Job:  map 100% reduce 77%
+2022-07-31 13:42:43,102 INFO mapreduce.Job:  map 100% reduce 85%
+2022-07-31 13:42:44,107 INFO mapreduce.Job:  map 100% reduce 94%
+2022-07-31 13:42:45,113 INFO mapreduce.Job:  map 100% reduce 96%
+2022-07-31 13:42:46,120 INFO mapreduce.Job:  map 100% reduce 100%
+2022-07-31 13:42:47,135 INFO mapreduce.Job: Job job_1659285263204_0008 completed successfully
+2022-07-31 13:42:47,243 INFO mapreduce.Job: Counters: 56
+	File System Counters
+		FILE: Number of bytes read=1282753
+		FILE: Number of bytes written=30646379
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=7027498158
+		HDFS: Number of bytes written=160993
+		HDFS: Number of read operations=397
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=94
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=1
+		Launched map tasks=54
+		Launched reduce tasks=47
+		Data-local map tasks=54
+		Total time spent by all maps in occupied slots (ms)=1049486
+		Total time spent by all reduces in occupied slots (ms)=789040
+		Total time spent by all map tasks (ms)=524743
+		Total time spent by all reduce tasks (ms)=197260
+		Total vcore-milliseconds taken by all map tasks=524743
+		Total vcore-milliseconds taken by all reduce tasks=197260
+		Total megabyte-milliseconds taken by all map tasks=2149347328
+		Total megabyte-milliseconds taken by all reduce tasks=1615953920
+	Map-Reduce Framework
+		Map input records=57251753
+		Map output records=57251753
+		Map output bytes=1083501473
+		Map output materialized bytes=1297699
+		Input split bytes=5937
+		Combine input records=57251753
+		Combine output records=61136
+		Reduce input groups=8053
+		Reduce shuffle bytes=1297699
+		Reduce input records=61136
+		Reduce output records=8053
+		Spilled Records=122272
+		Shuffled Maps =2538
+		Failed Shuffles=0
+		Merged Map outputs=2538
+		GC time elapsed (ms)=23170
+		CPU time spent (ms)=469830
+		Physical memory (bytes) snapshot=86516547584
+		Virtual memory (bytes) snapshot=681498071040
+		Total committed heap usage (bytes)=169336635392
+		Peak Map Physical memory (bytes)=1276690432
+		Peak Map Virtual memory (bytes)=5200400384
+		Peak Reduce Physical memory (bytes)=424873984
+		Peak Reduce Virtual memory (bytes)=8538333184
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=7027492221
+	File Output Format Counters 
+		Bytes Written=160993
+2022-07-31 13:42:48,193 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:42:50,455 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:42:51,095 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-07-31 13:42:51,498 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/andres.collares/.staging/job_1659285263204_0009
+2022-07-31 13:42:51,770 INFO input.FileInputFormat: Total input files to process : 3
+2022-07-31 13:42:51,812 INFO mapreduce.JobSubmitter: number of splits:54
+2022-07-31 13:42:51,907 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1659285263204_0009
+2022-07-31 13:42:51,908 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-07-31 13:42:52,045 INFO conf.Configuration: resource-types.xml not found
+2022-07-31 13:42:52,045 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-07-31 13:42:52,100 INFO impl.YarnClientImpl: Submitted application application_1659285263204_0009
+2022-07-31 13:42:52,127 INFO mapreduce.Job: The url to track the job: http://node04.datos.cluster.uy:8088/proxy/application_1659285263204_0009/
+2022-07-31 13:42:52,128 INFO mapreduce.Job: Running job: job_1659285263204_0009
+2022-07-31 13:42:59,234 INFO mapreduce.Job: Job job_1659285263204_0009 running in uber mode : false
+2022-07-31 13:42:59,237 INFO mapreduce.Job:  map 0% reduce 0%
+2022-07-31 13:43:10,369 INFO mapreduce.Job:  map 2% reduce 0%
+2022-07-31 13:43:11,375 INFO mapreduce.Job:  map 11% reduce 0%
+2022-07-31 13:43:12,383 INFO mapreduce.Job:  map 44% reduce 0%
+2022-07-31 13:43:18,424 INFO mapreduce.Job:  map 46% reduce 0%
+2022-07-31 13:43:19,432 INFO mapreduce.Job:  map 50% reduce 0%
+2022-07-31 13:43:22,447 INFO mapreduce.Job:  map 56% reduce 0%
+2022-07-31 13:43:23,452 INFO mapreduce.Job:  map 72% reduce 0%
+2022-07-31 13:43:24,460 INFO mapreduce.Job:  map 87% reduce 0%
+2022-07-31 13:43:31,496 INFO mapreduce.Job:  map 89% reduce 0%
+2022-07-31 13:43:32,500 INFO mapreduce.Job:  map 91% reduce 0%
+2022-07-31 13:43:33,506 INFO mapreduce.Job:  map 100% reduce 0%
+2022-07-31 13:43:34,514 INFO mapreduce.Job:  map 100% reduce 12%
+2022-07-31 13:43:35,521 INFO mapreduce.Job:  map 100% reduce 15%
+2022-07-31 13:43:38,533 INFO mapreduce.Job:  map 100% reduce 20%
+2022-07-31 13:43:39,544 INFO mapreduce.Job:  map 100% reduce 32%
+2022-07-31 13:43:40,549 INFO mapreduce.Job:  map 100% reduce 33%
+2022-07-31 13:43:41,553 INFO mapreduce.Job:  map 100% reduce 35%
+2022-07-31 13:43:42,558 INFO mapreduce.Job:  map 100% reduce 40%
+2022-07-31 13:43:43,562 INFO mapreduce.Job:  map 100% reduce 50%
+2022-07-31 13:43:44,566 INFO mapreduce.Job:  map 100% reduce 53%
+2022-07-31 13:43:45,569 INFO mapreduce.Job:  map 100% reduce 55%
+2022-07-31 13:43:46,574 INFO mapreduce.Job:  map 100% reduce 60%
+2022-07-31 13:43:48,582 INFO mapreduce.Job:  map 100% reduce 70%
+2022-07-31 13:43:49,587 INFO mapreduce.Job:  map 100% reduce 73%
+2022-07-31 13:43:50,590 INFO mapreduce.Job:  map 100% reduce 75%
+2022-07-31 13:43:52,599 INFO mapreduce.Job:  map 100% reduce 85%
+2022-07-31 13:43:53,605 INFO mapreduce.Job:  map 100% reduce 87%
+2022-07-31 13:43:54,609 INFO mapreduce.Job:  map 100% reduce 88%
+2022-07-31 13:43:55,614 INFO mapreduce.Job:  map 100% reduce 90%
+2022-07-31 13:43:56,620 INFO mapreduce.Job:  map 100% reduce 100%
+2022-07-31 13:43:57,637 INFO mapreduce.Job: Job job_1659285263204_0009 completed successfully
+2022-07-31 13:43:57,757 INFO mapreduce.Job: Counters: 56
+	File System Counters
+		FILE: Number of bytes read=1282831
+		FILE: Number of bytes written=34271910
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=7027498158
+		HDFS: Number of bytes written=160993
+		HDFS: Number of read operations=462
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=120
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=1
+		Launched map tasks=54
+		Launched reduce tasks=60
+		Data-local map tasks=54
+		Total time spent by all maps in occupied slots (ms)=1100622
+		Total time spent by all reduces in occupied slots (ms)=1120648
+		Total time spent by all map tasks (ms)=550311
+		Total time spent by all reduce tasks (ms)=280162
+		Total vcore-milliseconds taken by all map tasks=550311
+		Total vcore-milliseconds taken by all reduce tasks=280162
+		Total megabyte-milliseconds taken by all map tasks=2254073856
+		Total megabyte-milliseconds taken by all reduce tasks=2295087104
+	Map-Reduce Framework
+		Map input records=57251753
+		Map output records=57251753
+		Map output bytes=1083501473
+		Map output materialized bytes=1301911
+		Input split bytes=5937
+		Combine input records=57251753
+		Combine output records=61136
+		Reduce input groups=8053
+		Reduce shuffle bytes=1301911
+		Reduce input records=61136
+		Reduce output records=8053
+		Spilled Records=122272
+		Shuffled Maps =3240
+		Failed Shuffles=0
+		Merged Map outputs=3240
+		GC time elapsed (ms)=24735
+		CPU time spent (ms)=481210
+		Physical memory (bytes) snapshot=92138725376
+		Virtual memory (bytes) snapshot=792419028992
+		Total committed heap usage (bytes)=188902539264
+		Peak Map Physical memory (bytes)=1281654784
+		Peak Map Virtual memory (bytes)=5198323712
+		Peak Reduce Physical memory (bytes)=427347968
+		Peak Reduce Virtual memory (bytes)=8538189824
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=7027492221
+	File Output Format Counters 
+		Bytes Written=160993
+2022-07-31 13:43:58,741 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:44:00,819 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:44:01,466 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-07-31 13:44:01,860 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/andres.collares/.staging/job_1659285263204_0010
+2022-07-31 13:44:02,092 INFO input.FileInputFormat: Total input files to process : 3
+2022-07-31 13:44:02,142 INFO mapreduce.JobSubmitter: number of splits:54
+2022-07-31 13:44:02,233 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1659285263204_0010
+2022-07-31 13:44:02,233 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-07-31 13:44:02,374 INFO conf.Configuration: resource-types.xml not found
+2022-07-31 13:44:02,374 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-07-31 13:44:02,433 INFO impl.YarnClientImpl: Submitted application application_1659285263204_0010
+2022-07-31 13:44:02,460 INFO mapreduce.Job: The url to track the job: http://node04.datos.cluster.uy:8088/proxy/application_1659285263204_0010/
+2022-07-31 13:44:02,461 INFO mapreduce.Job: Running job: job_1659285263204_0010
+2022-07-31 13:44:08,559 INFO mapreduce.Job: Job job_1659285263204_0010 running in uber mode : false
+2022-07-31 13:44:08,562 INFO mapreduce.Job:  map 0% reduce 0%
+2022-07-31 13:44:20,688 INFO mapreduce.Job:  map 13% reduce 0%
+2022-07-31 13:44:21,693 INFO mapreduce.Job:  map 39% reduce 0%
+2022-07-31 13:44:22,699 INFO mapreduce.Job:  map 44% reduce 0%
+2022-07-31 13:44:28,748 INFO mapreduce.Job:  map 48% reduce 0%
+2022-07-31 13:44:29,754 INFO mapreduce.Job:  map 63% reduce 0%
+2022-07-31 13:44:30,758 INFO mapreduce.Job:  map 72% reduce 0%
+2022-07-31 13:44:31,765 INFO mapreduce.Job:  map 89% reduce 0%
+2022-07-31 13:44:36,787 INFO mapreduce.Job:  map 91% reduce 0%
+2022-07-31 13:44:37,794 INFO mapreduce.Job:  map 100% reduce 0%
+2022-07-31 13:44:38,801 INFO mapreduce.Job:  map 100% reduce 12%
+2022-07-31 13:44:39,806 INFO mapreduce.Job:  map 100% reduce 13%
+2022-07-31 13:44:41,814 INFO mapreduce.Job:  map 100% reduce 19%
+2022-07-31 13:44:42,817 INFO mapreduce.Job:  map 100% reduce 22%
+2022-07-31 13:44:43,821 INFO mapreduce.Job:  map 100% reduce 29%
+2022-07-31 13:44:45,829 INFO mapreduce.Job:  map 100% reduce 33%
+2022-07-31 13:44:46,834 INFO mapreduce.Job:  map 100% reduce 38%
+2022-07-31 13:44:47,840 INFO mapreduce.Job:  map 100% reduce 41%
+2022-07-31 13:44:48,845 INFO mapreduce.Job:  map 100% reduce 46%
+2022-07-31 13:44:51,857 INFO mapreduce.Job:  map 100% reduce 55%
+2022-07-31 13:44:52,863 INFO mapreduce.Job:  map 100% reduce 62%
+2022-07-31 13:44:53,868 INFO mapreduce.Job:  map 100% reduce 64%
+2022-07-31 13:44:55,879 INFO mapreduce.Job:  map 100% reduce 71%
+2022-07-31 13:44:56,883 INFO mapreduce.Job:  map 100% reduce 74%
+2022-07-31 13:44:57,887 INFO mapreduce.Job:  map 100% reduce 75%
+2022-07-31 13:44:58,891 INFO mapreduce.Job:  map 100% reduce 77%
+2022-07-31 13:44:59,896 INFO mapreduce.Job:  map 100% reduce 86%
+2022-07-31 13:45:00,901 INFO mapreduce.Job:  map 100% reduce 87%
+2022-07-31 13:45:01,904 INFO mapreduce.Job:  map 100% reduce 88%
+2022-07-31 13:45:02,908 INFO mapreduce.Job:  map 100% reduce 91%
+2022-07-31 13:45:03,914 INFO mapreduce.Job:  map 100% reduce 97%
+2022-07-31 13:45:04,921 INFO mapreduce.Job:  map 100% reduce 100%
+2022-07-31 13:45:04,930 INFO mapreduce.Job: Job job_1659285263204_0010 completed successfully
+2022-07-31 13:45:05,054 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=1282885
+		FILE: Number of bytes written=36782016
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=7027498158
+		HDFS: Number of bytes written=160993
+		HDFS: Number of read operations=507
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=138
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=54
+		Launched reduce tasks=69
+		Data-local map tasks=54
+		Total time spent by all maps in occupied slots (ms)=977022
+		Total time spent by all reduces in occupied slots (ms)=1095636
+		Total time spent by all map tasks (ms)=488511
+		Total time spent by all reduce tasks (ms)=273909
+		Total vcore-milliseconds taken by all map tasks=488511
+		Total vcore-milliseconds taken by all reduce tasks=273909
+		Total megabyte-milliseconds taken by all map tasks=2000941056
+		Total megabyte-milliseconds taken by all reduce tasks=2243862528
+	Map-Reduce Framework
+		Map input records=57251753
+		Map output records=57251753
+		Map output bytes=1083501473
+		Map output materialized bytes=1304827
+		Input split bytes=5937
+		Combine input records=57251753
+		Combine output records=61136
+		Reduce input groups=8053
+		Reduce shuffle bytes=1304827
+		Reduce input records=61136
+		Reduce output records=8053
+		Spilled Records=122272
+		Shuffled Maps =3726
+		Failed Shuffles=0
+		Merged Map outputs=3726
+		GC time elapsed (ms)=23331
+		CPU time spent (ms)=482650
+		Physical memory (bytes) snapshot=95537111040
+		Virtual memory (bytes) snapshot=869263892480
+		Total committed heap usage (bytes)=202673487872
+		Peak Map Physical memory (bytes)=1275387904
+		Peak Map Virtual memory (bytes)=5199364096
+		Peak Reduce Physical memory (bytes)=429363200
+		Peak Reduce Virtual memory (bytes)=8538181632
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=7027492221
+	File Output Format Counters 
+		Bytes Written=160993
+2022-07-31 13:45:06,052 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:45:08,074 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-07-31 13:45:08,736 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-07-31 13:45:09,107 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/andres.collares/.staging/job_1659285263204_0011
+2022-07-31 13:45:09,338 INFO input.FileInputFormat: Total input files to process : 3
+2022-07-31 13:45:09,385 INFO mapreduce.JobSubmitter: number of splits:54
+2022-07-31 13:45:09,477 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1659285263204_0011
+2022-07-31 13:45:09,477 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-07-31 13:45:09,616 INFO conf.Configuration: resource-types.xml not found
+2022-07-31 13:45:09,617 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-07-31 13:45:09,672 INFO impl.YarnClientImpl: Submitted application application_1659285263204_0011
+2022-07-31 13:45:09,699 INFO mapreduce.Job: The url to track the job: http://node04.datos.cluster.uy:8088/proxy/application_1659285263204_0011/
+2022-07-31 13:45:09,700 INFO mapreduce.Job: Running job: job_1659285263204_0011
+2022-07-31 13:45:16,813 INFO mapreduce.Job: Job job_1659285263204_0011 running in uber mode : false
+2022-07-31 13:45:16,816 INFO mapreduce.Job:  map 0% reduce 0%
+2022-07-31 13:45:26,950 INFO mapreduce.Job:  map 2% reduce 0%
+2022-07-31 13:45:27,957 INFO mapreduce.Job:  map 11% reduce 0%
+2022-07-31 13:45:28,964 INFO mapreduce.Job:  map 43% reduce 0%
+2022-07-31 13:45:29,969 INFO mapreduce.Job:  map 44% reduce 0%
+2022-07-31 13:45:35,008 INFO mapreduce.Job:  map 46% reduce 0%
+2022-07-31 13:45:37,017 INFO mapreduce.Job:  map 52% reduce 0%
+2022-07-31 13:45:38,023 INFO mapreduce.Job:  map 65% reduce 0%
+2022-07-31 13:45:39,031 INFO mapreduce.Job:  map 87% reduce 0%
+2022-07-31 13:45:40,037 INFO mapreduce.Job:  map 89% reduce 0%
+2022-07-31 13:45:45,063 INFO mapreduce.Job:  map 94% reduce 0%
+2022-07-31 13:45:46,068 INFO mapreduce.Job:  map 100% reduce 0%
+2022-07-31 13:45:47,073 INFO mapreduce.Job:  map 100% reduce 8%
+2022-07-31 13:45:48,080 INFO mapreduce.Job:  map 100% reduce 9%
+2022-07-31 13:45:49,083 INFO mapreduce.Job:  map 100% reduce 10%
+2022-07-31 13:45:50,087 INFO mapreduce.Job:  map 100% reduce 14%
+2022-07-31 13:45:52,100 INFO mapreduce.Job:  map 100% reduce 23%
+2022-07-31 13:45:54,109 INFO mapreduce.Job:  map 100% reduce 28%
+2022-07-31 13:45:56,118 INFO mapreduce.Job:  map 100% reduce 32%
+2022-07-31 13:45:57,122 INFO mapreduce.Job:  map 100% reduce 34%
+2022-07-31 13:45:58,126 INFO mapreduce.Job:  map 100% reduce 37%
+2022-07-31 13:45:59,131 INFO mapreduce.Job:  map 100% reduce 39%
+2022-07-31 13:46:00,135 INFO mapreduce.Job:  map 100% reduce 44%
+2022-07-31 13:46:01,139 INFO mapreduce.Job:  map 100% reduce 45%
+2022-07-31 13:46:02,145 INFO mapreduce.Job:  map 100% reduce 48%
+2022-07-31 13:46:03,149 INFO mapreduce.Job:  map 100% reduce 52%
+2022-07-31 13:46:04,153 INFO mapreduce.Job:  map 100% reduce 57%
+2022-07-31 13:46:05,157 INFO mapreduce.Job:  map 100% reduce 59%
+2022-07-31 13:46:06,161 INFO mapreduce.Job:  map 100% reduce 62%
+2022-07-31 13:46:07,165 INFO mapreduce.Job:  map 100% reduce 64%
+2022-07-31 13:46:08,170 INFO mapreduce.Job:  map 100% reduce 72%
+2022-07-31 13:46:10,178 INFO mapreduce.Job:  map 100% reduce 76%
+2022-07-31 13:46:11,181 INFO mapreduce.Job:  map 100% reduce 77%
+2022-07-31 13:46:12,186 INFO mapreduce.Job:  map 100% reduce 86%
+2022-07-31 13:46:14,194 INFO mapreduce.Job:  map 100% reduce 89%
+2022-07-31 13:46:15,197 INFO mapreduce.Job:  map 100% reduce 90%
+2022-07-31 13:46:16,203 INFO mapreduce.Job:  map 100% reduce 100%
+2022-07-31 13:46:17,218 INFO mapreduce.Job: Job job_1659285263204_0011 completed successfully
+2022-07-31 13:46:17,332 INFO mapreduce.Job: Counters: 56
+	File System Counters
+		FILE: Number of bytes read=1282993
+		FILE: Number of bytes written=41802000
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=7027498158
+		HDFS: Number of bytes written=160993
+		HDFS: Number of read operations=597
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=174
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=1
+		Launched map tasks=54
+		Launched reduce tasks=87
+		Data-local map tasks=54
+		Total time spent by all maps in occupied slots (ms)=966656
+		Total time spent by all reduces in occupied slots (ms)=1333328
+		Total time spent by all map tasks (ms)=483328
+		Total time spent by all reduce tasks (ms)=333332
+		Total vcore-milliseconds taken by all map tasks=483328
+		Total vcore-milliseconds taken by all reduce tasks=333332
+		Total megabyte-milliseconds taken by all map tasks=1979711488
+		Total megabyte-milliseconds taken by all reduce tasks=2730655744
+	Map-Reduce Framework
+		Map input records=57251753
+		Map output records=57251753
+		Map output bytes=1083501473
+		Map output materialized bytes=1310659
+		Input split bytes=5937
+		Combine input records=57251753
+		Combine output records=61136
+		Reduce input groups=8053
+		Reduce shuffle bytes=1310659
+		Reduce input records=61136
+		Reduce output records=8053
+		Spilled Records=122272
+		Shuffled Maps =4698
+		Failed Shuffles=0
+		Merged Map outputs=4698
+		GC time elapsed (ms)=25150
+		CPU time spent (ms)=501760
+		Physical memory (bytes) snapshot=103703326720
+		Virtual memory (bytes) snapshot=1022819885056
+		Total committed heap usage (bytes)=230487490560
+		Peak Map Physical memory (bytes)=1280565248
+		Peak Map Virtual memory (bytes)=5198499840
+		Peak Reduce Physical memory (bytes)=428810240
+		Peak Reduce Virtual memory (bytes)=8536969216
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=7027492221
+	File Output Format Counters 
+		Bytes Written=160993
+2022-07-31 13:46:18,355 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+WARNING: nodemanager did not stop gracefully after 5 seconds: Trying to kill with kill -9
